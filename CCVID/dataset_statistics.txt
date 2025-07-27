@@ -1,0 +1,6 @@
+CCVID to Market1501 Conversion Statistics
+==================================================
+Total images: 15280
+Train images: 4984
+Query images: 1899
+Gallery images: 8397

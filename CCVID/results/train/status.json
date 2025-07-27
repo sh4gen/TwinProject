@@ -1,0 +1,14 @@
+{"date": "7/27/2025", "time": "14:24:43", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification train."}
+{"date": "7/27/2025", "time": "14:24:43", "status": "FAILURE", "verbosity": "INFO", "message": "'NoneType' object has no attribute 'groups'"}
+{"date": "7/27/2025", "time": "14:28:10", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification train."}
+{"date": "7/27/2025", "time": "14:28:11", "status": "STARTED", "verbosity": "INFO", "message": "Starting Training Loop."}
+{"date": "7/27/2025", "time": "14:28:13", "status": "FAILURE", "verbosity": "INFO", "message": "shape '[64, -1]' is invalid for input of size 376"}
+{"date": "7/27/2025", "time": "14:34:6", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification train."}
+{"date": "7/27/2025", "time": "14:34:6", "status": "RUNNING", "verbosity": "INFO", "message": "Resuming training from checkpoint: /home/ika/yzlm/TwinProject/CCVID/results/train/model_epoch_000_step_00000.pth"}
+{"date": "7/27/2025", "time": "14:34:10", "status": "STARTED", "verbosity": "INFO", "message": "Starting Training Loop."}
+{"date": "7/27/2025", "time": "14:34:12", "status": "FAILURE", "verbosity": "INFO", "message": "shape '[64, -1]' is invalid for input of size 376"}
+{"date": "7/27/2025", "time": "14:34:55", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification train."}
+{"date": "7/27/2025", "time": "14:34:55", "status": "RUNNING", "verbosity": "INFO", "message": "Resuming training from checkpoint: /home/ika/yzlm/TwinProject/CCVID/results/train/model_epoch_000_step_00000.pth"}
+{"date": "7/27/2025", "time": "14:34:59", "status": "STARTED", "verbosity": "INFO", "message": "Starting Training Loop."}
+{"epoch": 0, "step": 1689, "max_epoch": 29, "max_step": 55530, "time_per_epoch": "0:02:33.555333", "time_per_step": "0:00:00.084343", "eta": "1:14:13.104654", "date": "7/27/2025", "time": "14:37:32", "status": "RUNNING", "verbosity": "INFO", "message": "Training loop in progress"}
+{"date": "7/27/2025", "time": "14:37:32", "status": "RUNNING", "verbosity": "INFO", "message": "Train metrics generated.", "kpi": {"train_loss": 1.5954757928848267, "train_acc": 0.8416037559509277}}
