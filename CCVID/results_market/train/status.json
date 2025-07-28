@@ -1,2 +1,0 @@
-{"date": "7/27/2025", "time": "14:22:32", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification train."}
-{"date": "7/27/2025", "time": "14:22:32", "status": "FAILURE", "verbosity": "INFO", "message": "'NoneType' object has no attribute 'groups'"}
