@@ -1,2 +1,6 @@
 CCVID/data/
 *.pth
+*.mp4
+*.pt
+*.onnx
+*.engine
