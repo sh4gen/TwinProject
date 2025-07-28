@@ -58,8 +58,8 @@ dataset:
   query_dataset_dir: /home/ika/yzlm/TwinProject/CCVID/data/query
   num_classes: 75
   batch_size: 64
-  val_batch_size: 64
-  num_workers: 4
+  val_batch_size: 8
+  num_workers: 1
   pixel_mean:
   - 0.444
   - 0.438
@@ -82,8 +82,8 @@ train:
   cudnn:
     benchmark: false
     deterministic: true
-  num_epochs: 30
-  checkpoint_interval: 10
+  num_epochs: 100
+  checkpoint_interval: 5
   validation_interval: 5
   resume_training_checkpoint_path: null
   results_dir: /home/ika/yzlm/TwinProject/CCVID/results/train
@@ -101,7 +101,7 @@ train:
     warmup_iters: 10
     warmup_epochs: 20
     warmup_method: linear
-    base_lr: 0.0035
+    base_lr: 0.00035
     momentum: 0.9
     center_loss_weight: 0.0005
     center_lr: 0.5

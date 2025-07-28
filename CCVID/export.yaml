@@ -15,5 +15,5 @@ model:
   label_smooth: True
 
 export:
-  checkpoint: "/home/ika/yzlm/TwinProject/CCVID/results/train/reid_model_latest.pth"
-  onnx_file: "/home/ika/yzlm/TwinProject/CCVID/results/exported/model.onnx"
+  checkpoint: "/home/ika/yzlm/TwinProject/CCVID/results/train/model_epoch_019_step_33813.pth"
+  onnx_file: "/home/ika/yzlm/TwinProject/CCVID/results/exported/model14.onnx"
