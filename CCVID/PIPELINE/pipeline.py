@@ -26,17 +26,6 @@ class Pipeline:
             json.dump(self.results, f, indent=2)
         print(f"Results saved to {results_file}")
 
-class Pipe:
-    def __init__(self, name):
-        self.name = name
-        
-    def run(self):
-        raise NotImplementedError
-        
-    def exec(self, script):
-        return os.system(script)
-
-
 
 def create_reid_pipeline():
     pipeline = Pipeline("reid_ccvid")

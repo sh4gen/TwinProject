@@ -9,7 +9,7 @@ project_root = os.path.abspath(os.path.join(current_dir, "../../"))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-from PIPELINE.pipeline import Pipe
+from __pipe_structure__ import Pipe
 from PIPELINE.Pipes import __evaluate_backend_alt__ as backend
 
 class EvaluatePipe(Pipe):
