@@ -4,3 +4,4 @@ CCVID/data/
 *.pt
 *.onnx
 *.engine
+events.*
