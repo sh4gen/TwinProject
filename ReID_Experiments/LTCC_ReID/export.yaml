@@ -1,0 +1,19 @@
+encryption_key: nvidia_tao
+
+model:
+  backbone: resnet_50
+  last_stride: 1
+  input_channels: 3
+  input_width: 128
+  input_height: 256
+  neck: bnneck
+  feat_dim: 256
+  neck_feat: after
+  metric_loss_type: triplet
+  with_center_loss: False
+  with_flip_feature: False
+  label_smooth: True
+
+export:
+  checkpoint: "/home/ika/yzlm/TwinProject/CCVID/results/train/model_epoch_049_step_84547.pth"
+  onnx_file: "/home/ika/yzlm/TwinProject/CCVID/results/exported/model49.onnx"

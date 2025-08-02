@@ -9,10 +9,11 @@ project_root = os.path.abspath(os.path.join(current_dir, "../../"))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-from __pipe_structure__ import Pipe
+from ReID_Pipeline.Pipes import __pipe_structure__ as p
+
 from ReID_Pipeline.Pipes import __evaluate_backend_alt__ as backend
 
-class EvaluatePipe(Pipe):
+class EvaluatePipe(p.Pipe):
     def __init__(self, onnx_dir, query_dir, gallery_dir, results_dir,
                  feature_batch_size=256, eval_batch_size=1024, topk=(1,5,10), use_rerank=False):
         super().__init__("evaluate")

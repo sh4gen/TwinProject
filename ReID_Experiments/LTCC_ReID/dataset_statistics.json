@@ -1,0 +1,94 @@
+{
+  "pixel_mean": [
+    0.3875974873844695,
+    0.37646318343066176,
+    0.36940106118501864
+  ],
+  "pixel_std": [
+    0.2888937113569052,
+    0.2876176642928646,
+    0.28817982470790826
+  ],
+  "num_classes": 14,
+  "num_cameras": 12,
+  "image_stats": {
+    "min_width": 16,
+    "max_width": 526,
+    "min_height": 66,
+    "max_height": 652,
+    "avg_width": 0,
+    "avg_height": 0,
+    "total_images": 17119
+  },
+  "split_stats": {
+    "train": {
+      "num_images": 9576,
+      "num_ids": 14,
+      "num_cameras": 12
+    },
+    "test": {
+      "num_images": 7050,
+      "num_ids": 13,
+      "num_cameras": 12
+    },
+    "query": {
+      "num_images": 493,
+      "num_ids": 13,
+      "num_cameras": 12
+    }
+  },
+  "class_distribution": {
+    "2": 3730,
+    "1": 6541,
+    "5": 993,
+    "6": 600,
+    "4": 1301,
+    "7": 392,
+    "3": 2714,
+    "12": 165,
+    "8": 180,
+    "10": 137,
+    "9": 121,
+    "11": 107,
+    "14": 44,
+    "13": 94
+  },
+  "camera_distribution": {
+    "2": 1421,
+    "6": 2474,
+    "5": 1344,
+    "9": 3344,
+    "7": 441,
+    "8": 885,
+    "11": 1750,
+    "1": 995,
+    "4": 1727,
+    "12": 1044,
+    "10": 1022,
+    "3": 672
+  },
+  "images_per_class": {
+    "2": 3730,
+    "1": 6541,
+    "5": 993,
+    "6": 600,
+    "4": 1301,
+    "7": 392,
+    "3": 2714,
+    "12": 165,
+    "8": 180,
+    "10": 137,
+    "9": 121,
+    "11": 107,
+    "14": 44,
+    "13": 94
+  },
+  "dataset_info": {
+    "total_images": 17119,
+    "unique_identities": 14,
+    "unique_cameras": 12,
+    "avg_images_per_identity": 1222.7857142857142,
+    "min_images_per_identity": 44,
+    "max_images_per_identity": 6541
+  }
+}

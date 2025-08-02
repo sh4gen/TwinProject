@@ -28,25 +28,25 @@ class Pipeline:
 
 
 def create_reid_pipeline():
-    pipeline = Pipeline("reid_ccvid")
+    pipeline = Pipeline("0.0.1")
     
-    train_pipe = TrainPipe("/home/ika/yzlm/TwinProject/CCVID/train_with_val.yaml")
+    train_pipe = TrainPipe("/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/ltcc.yaml")
     pipeline.add_pipe(train_pipe)
     
     export_pipe = ExportPipe(
-        export_config_path="/home/ika/yzlm/TwinProject/CCVID/export.yaml",
-        checkpoint_dir="/home/ika/yzlm/TwinProject/CCVID/results/train",
-        export_dir="/home/ika/yzlm/TwinProject/CCVID/results/exported",
+        export_config_path="/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/export.yaml",
+        checkpoint_dir="/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/results_0.0.1/train",
+        export_dir="/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/results_0.0.1/exported",
         num_classes=75
     )
     pipeline.add_pipe(export_pipe)
     
 
     evaluate_pipe = EvaluatePipe(
-        onnx_dir="/home/ika/yzlm/TwinProject/CCVID/results/exported",
-        query_dir="/home/ika/yzlm/TwinProject/CCVID/data/query",
-        gallery_dir="/home/ika/yzlm/TwinProject/CCVID/data/bounding_box_test",
-        results_dir="/home/ika/yzlm/TwinProject/CCVID/results",
+        onnx_dir="/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/results_0.0.1/exported",
+        query_dir="/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/query",
+        gallery_dir="/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/test",
+        results_dir="/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/results_0.0.1",
 
         feature_batch_size=256,
         eval_batch_size=1024,

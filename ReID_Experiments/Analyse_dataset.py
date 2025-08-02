@@ -8,15 +8,6 @@ from tqdm import tqdm
 import re
 
 def analyze_reid_dataset(dataset_path, save_stats=True):
-    """
-    Analyze a Re-ID dataset and calculate all necessary statistics
-    
-    Args:
-        dataset_path: Path to the dataset root (containing bounding_box_train, query, etc.)
-        save_stats: Whether to save statistics to a JSON file
-    """
-    
-    # Initialize statistics
     stats = {
         'pixel_mean': [0, 0, 0],
         'pixel_std': [0, 0, 0],
@@ -275,6 +266,6 @@ model:
 
 # Example usage
 if __name__ == "__main__":
-    dataset_path = "/home/ika/yzlm/TwinProject/CCVID/CCVID_market1501_format"
+    dataset_path = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID"
     
     stats = analyze_reid_dataset(dataset_path, save_stats=True)

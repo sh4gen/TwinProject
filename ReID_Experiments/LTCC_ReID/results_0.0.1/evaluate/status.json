@@ -1,0 +1,11 @@
+{"date": "7/31/2025", "time": "18:22:47", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "7/31/2025", "time": "18:22:47", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/results_0.0.1/train/model_epoch_039_step_02487.pth"}
+{"date": "7/31/2025", "time": "18:23:1", "status": "FAILURE", "verbosity": "INFO", "message": "CUDA out of memory. Tried to allocate 2.54 GiB. GPU 0 has a total capacity of 11.50 GiB of which 901.62 MiB is free. Including non-PyTorch memory, this process has 10.17 GiB memory in use. Of the allocated memory 9.90 GiB is allocated by PyTorch, and 43.87 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"}
+{"date": "7/31/2025", "time": "18:23:18", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "7/31/2025", "time": "18:23:18", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/results_0.0.1/train/model_epoch_039_step_02487.pth"}
+{"date": "7/31/2025", "time": "18:23:32", "status": "RUNNING", "verbosity": "INFO", "message": "Test metrics generated.", "kpi": {"mAP": 0.1}}
+{"date": "7/31/2025", "time": "18:23:33", "status": "RUNNING", "verbosity": "INFO", "message": "Evaluate finished successfully.", "kpi": {"mAP": 0.1}}
+{"date": "7/31/2025", "time": "18:58:17", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "7/31/2025", "time": "18:58:17", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/results_0.0.1/train/model_epoch_149_step_09268.pth"}
+{"date": "7/31/2025", "time": "18:58:31", "status": "RUNNING", "verbosity": "INFO", "message": "Test metrics generated.", "kpi": {"mAP": 0.1}}
+{"date": "7/31/2025", "time": "18:58:32", "status": "RUNNING", "verbosity": "INFO", "message": "Evaluate finished successfully.", "kpi": {"mAP": 0.1}}

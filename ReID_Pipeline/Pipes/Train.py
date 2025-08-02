@@ -1,6 +1,6 @@
-from __pipe_structure__ import Pipe
+from ReID_Pipeline.Pipes import __pipe_structure__ as p
 
-class TrainPipe(Pipe):
+class TrainPipe(p.Pipe):
     def __init__(self, config_path):
         super().__init__("train")
         self.config_path = config_path

@@ -6,3 +6,5 @@ ReID_Experiments/LTCC_ReID/data/
 *.onnx
 *.engine
 events.*
+ReID_Pipeline/Pipes/__pycache__
+ReID_Pipeline/__pycache__

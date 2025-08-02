@@ -1,9 +1,9 @@
 import os, glob, re
 
-from __pipe_structure__ import Pipe
+from ReID_Pipeline.Pipes import __pipe_structure__ as p
 
 
-class ExportPipe(Pipe):
+class ExportPipe(p.Pipe):
     def __init__(self, export_config_path, checkpoint_dir, export_dir, num_classes=75):
         super().__init__("export")
         self.export_config_path = export_config_path
