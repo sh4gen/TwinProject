@@ -1,5 +1,6 @@
 ReID_Experiments/CCVID/data/
 ReID_Experiments/LTCC_ReID/data/
+ReID_Experiments/LTCC_ReID/data_old
 *.pth
 *.mp4
 *.pt
