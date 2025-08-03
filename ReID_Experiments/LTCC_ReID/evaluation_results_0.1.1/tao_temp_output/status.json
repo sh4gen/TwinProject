@@ -1,0 +1,4 @@
+{"date": "8/2/2025", "time": "8:37:18", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "8/2/2025", "time": "8:37:18", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/results_0.1.1/train/model_epoch_009_step_01337.pth"}
+{"date": "8/2/2025", "time": "8:37:39", "status": "RUNNING", "verbosity": "INFO", "message": "Test metrics generated.", "kpi": {"mAP": 0.0}}
+{"date": "8/2/2025", "time": "8:37:39", "status": "FAILURE", "verbosity": "INFO", "message": "'NoneType' object has no attribute 'write'", "kpi": {"mAP": 0.0}}

@@ -2,7 +2,7 @@ import os
 import json
 from datetime import datetime
 
-from Pipes.Evaluate import EvaluatePipe
+from Pipes.EvaluateTAO import EvaluatePipeTAO
 from Pipes.Train import TrainPipe
 from Pipes.Export import ExportPipe
 
@@ -33,27 +33,46 @@ def create_reid_pipeline():
     train_pipe = TrainPipe("/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/ltcc.yaml")
     pipeline.add_pipe(train_pipe)
     
-    export_pipe = ExportPipe(
+    """export_pipe = ExportPipe(
         export_config_path="/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/export.yaml",
         checkpoint_dir="/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/results_0.0.1/train",
         export_dir="/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/results_0.0.1/exported",
         num_classes=75
     )
-    pipeline.add_pipe(export_pipe)
+    pipeline.add_pipe(export_pipe)"""
     
 
-    evaluate_pipe = EvaluatePipe(
-        onnx_dir="/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/results_0.0.1/exported",
-        query_dir="/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/query",
-        gallery_dir="/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/test",
-        results_dir="/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/results_0.0.1",
+    CONFIG_FILE = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/ltcc.yaml"
+    
+    # 2. Directory where your trained .pth models are saved
+    CHECKPOINT_DIR = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/results_0.1.1/train"
+    
+    # 3. Path to the query image folder
+    QUERY_DIR = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/data/query"
+    
+    # 4. Path to the gallery (test) image folder
+    GALLERY_DIR = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/data/bounding_box_test"
+    
+    # 5. Directory where you want to save the final summary and intermediate logs
+    RESULTS_DIR = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/evaluation_results"
+    
+    # 6. Set to True or False to enable/disable re-ranking
+    USE_RERANK = True
 
-        feature_batch_size=256,
-        eval_batch_size=1024,
-        topk=(1,5,10),
-        use_rerank=False
+    # =================================================================
+    # --- RUN THE EVALUATION ---
+    # =================================================================
+    
+    # Initialize the evaluation pipe with your configuration
+    eval_pipe = EvaluatePipeTAO(
+        config_file=CONFIG_FILE,
+        checkpoint_dir=CHECKPOINT_DIR,
+        query_dir=QUERY_DIR,
+        gallery_dir=GALLERY_DIR,
+        results_dir=RESULTS_DIR,
+        use_rerank=USE_RERANK
     )
-    pipeline.add_pipe(evaluate_pipe)
+    pipeline.add_pipe(eval_pipe)
     
     return pipeline
 

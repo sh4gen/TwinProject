@@ -1,0 +1,121 @@
+2025-08-02 15:02:20,514 [TAO Toolkit] [INFO] root 160: Registry: ['nvcr.io']
+2025-08-02 15:02:20,573 [TAO Toolkit] [INFO] nvidia_tao_cli.components.instance_handler.local_instance 360: Running command in container: nvcr.io/nvidia/tao/tao-toolkit:6.0.0-pyt
+2025-08-02 15:02:20,582 [TAO Toolkit] [WARNING] nvidia_tao_cli.components.docker_handler.docker_handler 295: 
+Docker will run the commands as root. If you would like to retain your
+local host permissions, please add the "user":"UID:GID" in the
+DockerOptions portion of the "/home/ika/.tao_mounts.json" file. You can obtain your
+users UID and GID by using the "id -u" and "id -g" commands on the
+terminal.
+2025-08-02 15:02:20,582 [TAO Toolkit] [INFO] nvidia_tao_cli.components.docker_handler.docker_handler 308: Printing tty value True
+2025-08-02 12:02:23,138 [TAO Toolkit] [INFO] matplotlib.font_manager 1639: generated new fontManager
+sys:1: UserWarning: 
+'ltcc_gemini.yaml' is validated against ConfigStore schema with the same name.
+This behavior is deprecated in Hydra 1.1 and will be removed in Hydra 1.2.
+See https://hydra.cc/docs/1.2/upgrades/1.0_to_1.1/automatic_schema_matching for migration instructions.
+/usr/local/lib/python3.12/dist-packages/nvidia_tao_pytorch/core/hydra/hydra_runner.py:110: UserWarning: 
+'ltcc_gemini.yaml' is validated against ConfigStore schema with the same name.
+This behavior is deprecated in Hydra 1.1 and will be removed in Hydra 1.2.
+See https://hydra.cc/docs/1.2/upgrades/1.0_to_1.1/automatic_schema_matching for migration instructions.
+  _run_hydra(
+/usr/local/lib/python3.12/dist-packages/hydra/_internal/hydra.py:119: UserWarning: Future Hydra versions will no longer change working directory at job runtime by default.
+See https://hydra.cc/docs/1.2/upgrades/1.1_to_1.2/changes_to_job_working_dir/ for more information.
+  ret = run_job(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+The following callbacks returned in `LightningModule.configure_callbacks` will override existing callbacks passed to Trainer: ModelCheckpoint
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]Evaluate results will be saved at: /home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/evaluation_results_0.1.3/tao_temp_output
+╒══════════╤═════════╤════════════╤═════════════╕
+│ Subset   │   # IDs │   # Images │   # Cameras │
+╞══════════╪═════════╪════════════╪═════════════╡
+│ Query    │      75 │        493 │          12 │
+├──────────┼─────────┼────────────┼─────────────┤
+│ Gallery  │      75 │       7026 │          12 │
+╘══════════╧═════════╧════════════╧═════════════╛
+
+Testing: |          | 0/? [00:00<?, ?it/s]╒══════════╤═════════╤════════════╤═════════════╕│ Subset   │   # IDs │   # Images │   # Cameras │
+╞══════════╪═════════╪════════════╪═════════════╡
+│ Query    │      75 │        493 │          12 │
+├──────────┼─────────┼────────────┼─────────────┤
+│ Gallery  │      75 │       7026 │          12 │
+╘══════════╧═════════╧════════════╧═════════════╛
+
+Testing:   0%|          | 0/118 [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/118 [00:00<?, ?it/s]Testing DataLoader 0:   1%|          | 1/118 [00:00<00:27,  4.22it/s]Testing DataLoader 0:   2%|▏         | 2/118 [00:00<00:14,  7.91it/s]Testing DataLoader 0:   3%|▎         | 3/118 [00:00<00:13,  8.45it/s]Testing DataLoader 0:   3%|▎         | 4/118 [00:00<00:13,  8.74it/s]Testing DataLoader 0:   4%|▍         | 5/118 [00:00<00:12,  8.92it/s]Testing DataLoader 0:   5%|▌         | 6/118 [00:00<00:12,  9.04it/s]Testing DataLoader 0:   6%|▌         | 7/118 [00:00<00:12,  9.13it/s]Testing DataLoader 0:   7%|▋         | 8/118 [00:00<00:11,  9.20it/s]Testing DataLoader 0:   8%|▊         | 9/118 [00:00<00:11,  9.26it/s]Testing DataLoader 0:   8%|▊         | 10/118 [00:01<00:11,  9.31it/s]Testing DataLoader 0:   9%|▉         | 11/118 [00:01<00:11,  9.36it/s]Testing DataLoader 0:  10%|█         | 12/118 [00:01<00:11,  9.39it/s]Testing DataLoader 0:  11%|█         | 13/118 [00:01<00:11,  9.41it/s]Testing DataLoader 0:  12%|█▏        | 14/118 [00:01<00:11,  9.43it/s]Testing DataLoader 0:  13%|█▎        | 15/118 [00:01<00:10,  9.46it/s]Testing DataLoader 0:  14%|█▎        | 16/118 [00:01<00:10,  9.48it/s]Testing DataLoader 0:  14%|█▍        | 17/118 [00:01<00:10,  9.50it/s]Testing DataLoader 0:  15%|█▌        | 18/118 [00:01<00:10,  9.51it/s]Testing DataLoader 0:  16%|█▌        | 19/118 [00:01<00:10,  9.53it/s]Testing DataLoader 0:  17%|█▋        | 20/118 [00:02<00:10,  9.54it/s]Testing DataLoader 0:  18%|█▊        | 21/118 [00:02<00:10,  9.55it/s]Testing DataLoader 0:  19%|█▊        | 22/118 [00:02<00:10,  9.56it/s]Testing DataLoader 0:  19%|█▉        | 23/118 [00:02<00:09,  9.57it/s]Testing DataLoader 0:  20%|██        | 24/118 [00:02<00:09,  9.58it/s]Testing DataLoader 0:  21%|██        | 25/118 [00:02<00:09,  9.58it/s]Testing DataLoader 0:  22%|██▏       | 26/118 [00:02<00:09,  9.59it/s]Testing DataLoader 0:  23%|██▎       | 27/118 [00:02<00:09,  9.59it/s]Testing DataLoader 0:  24%|██▎       | 28/118 [00:02<00:09,  9.60it/s]Testing DataLoader 0:  25%|██▍       | 29/118 [00:03<00:09,  9.60it/s]Testing DataLoader 0:  25%|██▌       | 30/118 [00:03<00:09,  9.61it/s]Testing DataLoader 0:  26%|██▋       | 31/118 [00:03<00:09,  9.62it/s]Testing DataLoader 0:  27%|██▋       | 32/118 [00:03<00:08,  9.62it/s]Testing DataLoader 0:  28%|██▊       | 33/118 [00:03<00:08,  9.62it/s]Testing DataLoader 0:  29%|██▉       | 34/118 [00:03<00:08,  9.62it/s]Testing DataLoader 0:  30%|██▉       | 35/118 [00:03<00:08,  9.63it/s]Testing DataLoader 0:  31%|███       | 36/118 [00:03<00:08,  9.63it/s]Testing DataLoader 0:  31%|███▏      | 37/118 [00:03<00:08,  9.64it/s]Testing DataLoader 0:  32%|███▏      | 38/118 [00:03<00:08,  9.64it/s]Testing DataLoader 0:  33%|███▎      | 39/118 [00:04<00:08,  9.64it/s]Testing DataLoader 0:  34%|███▍      | 40/118 [00:04<00:08,  9.64it/s]Testing DataLoader 0:  35%|███▍      | 41/118 [00:04<00:07,  9.64it/s]Testing DataLoader 0:  36%|███▌      | 42/118 [00:04<00:07,  9.65it/s]Testing DataLoader 0:  36%|███▋      | 43/118 [00:04<00:07,  9.65it/s]Testing DataLoader 0:  37%|███▋      | 44/118 [00:04<00:07,  9.65it/s]Testing DataLoader 0:  38%|███▊      | 45/118 [00:04<00:07,  9.65it/s]Testing DataLoader 0:  39%|███▉      | 46/118 [00:04<00:07,  9.65it/s]Testing DataLoader 0:  40%|███▉      | 47/118 [00:04<00:07,  9.66it/s]Testing DataLoader 0:  41%|████      | 48/118 [00:04<00:07,  9.66it/s]Testing DataLoader 0:  42%|████▏     | 49/118 [00:05<00:07,  9.66it/s]Testing DataLoader 0:  42%|████▏     | 50/118 [00:05<00:07,  9.66it/s]Testing DataLoader 0:  43%|████▎     | 51/118 [00:05<00:06,  9.66it/s]Testing DataLoader 0:  44%|████▍     | 52/118 [00:05<00:06,  9.66it/s]Testing DataLoader 0:  45%|████▍     | 53/118 [00:05<00:06,  9.66it/s]Testing DataLoader 0:  46%|████▌     | 54/118 [00:05<00:06,  9.67it/s]Testing DataLoader 0:  47%|████▋     | 55/118 [00:05<00:06,  9.67it/s]Testing DataLoader 0:  47%|████▋     | 56/118 [00:05<00:06,  9.67it/s]Testing DataLoader 0:  48%|████▊     | 57/118 [00:05<00:06,  9.67it/s]Testing DataLoader 0:  49%|████▉     | 58/118 [00:05<00:06,  9.67it/s]Testing DataLoader 0:  50%|█████     | 59/118 [00:06<00:06,  9.67it/s]Testing DataLoader 0:  51%|█████     | 60/118 [00:06<00:05,  9.67it/s]Testing DataLoader 0:  52%|█████▏    | 61/118 [00:06<00:05,  9.67it/s]Testing DataLoader 0:  53%|█████▎    | 62/118 [00:06<00:05,  9.68it/s]Testing DataLoader 0:  53%|█████▎    | 63/118 [00:06<00:05,  9.68it/s]Testing DataLoader 0:  54%|█████▍    | 64/118 [00:06<00:05,  9.68it/s]Testing DataLoader 0:  55%|█████▌    | 65/118 [00:06<00:05,  9.68it/s]Testing DataLoader 0:  56%|█████▌    | 66/118 [00:06<00:05,  9.68it/s]Testing DataLoader 0:  57%|█████▋    | 67/118 [00:06<00:05,  9.68it/s]Testing DataLoader 0:  58%|█████▊    | 68/118 [00:07<00:05,  9.68it/s]Testing DataLoader 0:  58%|█████▊    | 69/118 [00:07<00:05,  9.69it/s]Testing DataLoader 0:  59%|█████▉    | 70/118 [00:07<00:04,  9.69it/s]Testing DataLoader 0:  60%|██████    | 71/118 [00:07<00:04,  9.69it/s]Testing DataLoader 0:  61%|██████    | 72/118 [00:07<00:04,  9.69it/s]Testing DataLoader 0:  62%|██████▏   | 73/118 [00:07<00:04,  9.69it/s]Testing DataLoader 0:  63%|██████▎   | 74/118 [00:07<00:04,  9.69it/s]Testing DataLoader 0:  64%|██████▎   | 75/118 [00:07<00:04,  9.69it/s]Testing DataLoader 0:  64%|██████▍   | 76/118 [00:07<00:04,  9.69it/s]Testing DataLoader 0:  65%|██████▌   | 77/118 [00:07<00:04,  9.69it/s]Testing DataLoader 0:  66%|██████▌   | 78/118 [00:08<00:04,  9.69it/s]Testing DataLoader 0:  67%|██████▋   | 79/118 [00:08<00:04,  9.69it/s]Testing DataLoader 0:  68%|██████▊   | 80/118 [00:08<00:03,  9.69it/s]Testing DataLoader 0:  69%|██████▊   | 81/118 [00:08<00:03,  9.70it/s]Testing DataLoader 0:  69%|██████▉   | 82/118 [00:08<00:03,  9.70it/s]Testing DataLoader 0:  70%|███████   | 83/118 [00:08<00:03,  9.70it/s]Testing DataLoader 0:  71%|███████   | 84/118 [00:08<00:03,  9.70it/s]Testing DataLoader 0:  72%|███████▏  | 85/118 [00:08<00:03,  9.70it/s]Testing DataLoader 0:  73%|███████▎  | 86/118 [00:08<00:03,  9.70it/s]Testing DataLoader 0:  74%|███████▎  | 87/118 [00:08<00:03,  9.70it/s]Testing DataLoader 0:  75%|███████▍  | 88/118 [00:09<00:03,  9.70it/s]Testing DataLoader 0:  75%|███████▌  | 89/118 [00:09<00:02,  9.70it/s]Testing DataLoader 0:  76%|███████▋  | 90/118 [00:09<00:02,  9.70it/s]Testing DataLoader 0:  77%|███████▋  | 91/118 [00:09<00:02,  9.70it/s]Testing DataLoader 0:  78%|███████▊  | 92/118 [00:09<00:02,  9.70it/s]Testing DataLoader 0:  79%|███████▉  | 93/118 [00:09<00:02,  9.70it/s]Testing DataLoader 0:  80%|███████▉  | 94/118 [00:09<00:02,  9.70it/s]Testing DataLoader 0:  81%|████████  | 95/118 [00:09<00:02,  9.70it/s]Testing DataLoader 0:  81%|████████▏ | 96/118 [00:09<00:02,  9.70it/s]Testing DataLoader 0:  82%|████████▏ | 97/118 [00:09<00:02,  9.70it/s]Testing DataLoader 0:  83%|████████▎ | 98/118 [00:10<00:02,  9.70it/s]Testing DataLoader 0:  84%|████████▍ | 99/118 [00:10<00:01,  9.70it/s]Testing DataLoader 0:  85%|████████▍ | 100/118 [00:10<00:01,  9.70it/s]Testing DataLoader 0:  86%|████████▌ | 101/118 [00:10<00:01,  9.70it/s]Testing DataLoader 0:  86%|████████▋ | 102/118 [00:10<00:01,  9.70it/s]Testing DataLoader 0:  87%|████████▋ | 103/118 [00:10<00:01,  9.70it/s]Testing DataLoader 0:  88%|████████▊ | 104/118 [00:10<00:01,  9.70it/s]Testing DataLoader 0:  89%|████████▉ | 105/118 [00:10<00:01,  9.71it/s]Testing DataLoader 0:  90%|████████▉ | 106/118 [00:10<00:01,  9.71it/s]Testing DataLoader 0:  91%|█████████ | 107/118 [00:11<00:01,  9.71it/s]Testing DataLoader 0:  92%|█████████▏| 108/118 [00:11<00:01,  9.71it/s]Testing DataLoader 0:  92%|█████████▏| 109/118 [00:11<00:00,  9.71it/s]Testing DataLoader 0:  93%|█████████▎| 110/118 [00:11<00:00,  9.71it/s]Testing DataLoader 0:  94%|█████████▍| 111/118 [00:11<00:00,  9.71it/s]Testing DataLoader 0:  95%|█████████▍| 112/118 [00:11<00:00,  9.71it/s]Testing DataLoader 0:  96%|█████████▌| 113/118 [00:11<00:00,  9.71it/s]Testing DataLoader 0:  97%|█████████▋| 114/118 [00:11<00:00,  9.71it/s]Testing DataLoader 0:  97%|█████████▋| 115/118 [00:11<00:00,  9.72it/s]Testing DataLoader 0:  98%|█████████▊| 116/118 [00:11<00:00,  9.72it/s]Testing DataLoader 0:  99%|█████████▉| 117/118 [00:12<00:00,  9.72it/s]Testing DataLoader 0: 100%|██████████| 118/118 [00:12<00:00,  9.71it/s]The test features are normalized.The distance matrix is computed using euclidean distance. It is then processed by re-ranking.
+╒════════════════════╤═════════╕
+│ Name               │ Score   │
+╞════════════════════╪═════════╡
+│ mAP                │ 17.5%   │
+├────────────────────┼─────────┤
+│ CMC curve, Rank-1  │ 40.6%   │
+├────────────────────┼─────────┤
+│ CMC curve, Rank-5  │ 55.4%   │
+├────────────────────┼─────────┤
+│ CMC curve, Rank-10 │ 61.5%   │
+╘════════════════════╧═════════╛
+Error executing job with overrides: ['evaluate.checkpoint=/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/results_0.1.3/train/model_epoch_059_step_16256.pth', 'evaluate.query_dataset=/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/data/query', 'evaluate.test_dataset=/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/data/bounding_box_test', 'evaluate.results_dir=/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/evaluation_results_0.1.3/tao_temp_output', 're_ranking.re_ranking=True']Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/nvidia_tao_pytorch/core/decorators/workflow.py", line 72, in _func
+    raise e
+  File "/usr/local/lib/python3.12/dist-packages/nvidia_tao_pytorch/core/decorators/workflow.py", line 51, in _func
+    runner(cfg, **kwargs)
+  File "/usr/local/lib/python3.12/dist-packages/nvidia_tao_pytorch/cv/re_identification/scripts/evaluate.py", line 82, in main
+    run_experiment(experiment_config=cfg,
+  File "/usr/local/lib/python3.12/dist-packages/nvidia_tao_pytorch/cv/re_identification/scripts/evaluate.py", line 60, in run_experiment
+    trainer.test(model, datamodule=dm)
+  File "/usr/local/lib/python3.12/dist-packages/pytorch_lightning/trainer/trainer.py", line 749, in test
+    return call._call_and_handle_interrupt(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pytorch_lightning/trainer/call.py", line 47, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pytorch_lightning/trainer/trainer.py", line 789, in _test_impl
+    results = self._run(model, ckpt_path=ckpt_path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pytorch_lightning/trainer/trainer.py", line 982, in _run
+    results = self._run_stage()
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pytorch_lightning/trainer/trainer.py", line 1019, in _run_stage
+    return self._evaluation_loop.run()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pytorch_lightning/loops/utilities.py", line 179, in _decorator
+    return loop_run(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pytorch_lightning/loops/evaluation_loop.py", line 151, in run
+    return self.on_run_end()
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pytorch_lightning/loops/evaluation_loop.py", line 291, in on_run_end
+    self._on_evaluation_epoch_end()
+  File "/usr/local/lib/python3.12/dist-packages/pytorch_lightning/loops/evaluation_loop.py", line 371, in _on_evaluation_epoch_end
+    call._call_lightning_module_hook(trainer, hook_name)
+  File "/usr/local/lib/python3.12/dist-packages/pytorch_lightning/trainer/call.py", line 171, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/nvidia_tao_pytorch/cv/re_identification/model/pl_reid_model.py", line 278, in on_test_epoch_end
+plt.savefig(self.experiment_spec["evaluate"]["output_cmc_curve_plot"])  File "/usr/local/lib/python3.12/dist-packages/matplotlib/pyplot.py", line 1243, in savefig
+res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/matplotlib/figure.py", line 3490, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/usr/local/lib/python3.12/dist-packages/matplotlib/backend_bases.py", line 2184, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/matplotlib/backend_bases.py", line 2040, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/matplotlib/backends/backend_agg.py", line 481, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/usr/local/lib/python3.12/dist-packages/matplotlib/backends/backend_agg.py", line 430, in _print_pil
+    mpl.image.imsave(
+  File "/usr/local/lib/python3.12/dist-packages/matplotlib/image.py", line 1634, in imsave
+    image.save(fname, **pil_kwargs)
+  File "/usr/local/lib/python3.12/dist-packages/PIL/Image.py", line 2596, in save
+    save_handler(self, fp, filename)
+  File "/usr/local/lib/python3.12/dist-packages/PIL/PngImagePlugin.py", line 1371, in _save
+    fp.write(_MAGIC)
+    ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'write'
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+
+Testing DataLoader 0: 100%|██████████| 118/118 [00:43<00:00,  2.74it/s]2025-08-02 12:03:14,245 [TAO Toolkit] [WARNING] root 339: Telemetry data couldn't be sent, but the command ran successfully.
+2025-08-02 12:03:14,246 [TAO Toolkit] [WARNING] root 342: [Error]: 'str' object has no attribute 'decode'
+2025-08-02 12:03:14,246 [TAO Toolkit] [WARNING] root 346: Execution status: FAIL
+2025-08-02 15:03:15,082 [TAO Toolkit] [INFO] nvidia_tao_cli.components.docker_handler.docker_handler 371: Stopping container.

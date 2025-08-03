@@ -15,7 +15,7 @@ from ReID_Pipeline.Pipes import __evaluate_backend_alt__ as backend
 
 class EvaluatePipe(p.Pipe):
     def __init__(self, onnx_dir, query_dir, gallery_dir, results_dir,
-                 feature_batch_size=256, eval_batch_size=1024, topk=(1,5,10), use_rerank=False):
+                 feature_batch_size=256, eval_batch_size=1024, topk=(1,5,10), use_rerank=False, custom=False):
         super().__init__("evaluate")
         self.onnx_dir = onnx_dir
         self.query_dir = query_dir
@@ -42,7 +42,7 @@ class EvaluatePipe(p.Pipe):
             json.dump(all_results, f, indent=2)
         print(f"All results saved to {results_file}")
 
-    def evaluate_model(self, onnx_path, model_name):
+    def evaluate_model_custom(self, onnx_path, model_name):
         query_features_path = os.path.join(self.results_dir, f"{model_name}_query_features.npz")
         gallery_features_path = os.path.join(self.results_dir, f"{model_name}_gallery_features.npz")
 
@@ -64,3 +64,24 @@ class EvaluatePipe(p.Pipe):
         }
         return result
 
+    def evaluate_model(self, onnx_path, model_name):
+        query_features_path = os.path.join(self.results_dir, f"{model_name}_query_features.npz")
+        gallery_features_path = os.path.join(self.results_dir, f"{model_name}_gallery_features.npz")
+
+        mAP, cmc_scores = backend.reid_pipeline(
+            onnx_path=onnx_path,
+            query_dir=self.query_dir,
+            gallery_dir=self.gallery_dir,
+            query_features_path=query_features_path,
+            gallery_features_path=gallery_features_path,
+            feature_batch_size=self.feature_batch_size,
+            eval_batch_size=self.eval_batch_size,
+            topk=self.topk,
+            use_rerank=self.use_rerank
+        )
+
+        result = {
+            "mAP": mAP,
+            "cmc": {f"Rank-{k}": float(cmc_scores[i]) for i, k in enumerate(self.topk)}
+        }
+        return result

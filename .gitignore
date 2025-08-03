@@ -9,3 +9,11 @@ ReID_Experiments/LTCC_ReID/data_old
 events.*
 ReID_Pipeline/Pipes/__pycache__
 ReID_Pipeline/__pycache__
+*.tlt
+*.png
+*.jpg
+*.mat
+*.zip
+*.tar.gz
+*.tar
+*.db
