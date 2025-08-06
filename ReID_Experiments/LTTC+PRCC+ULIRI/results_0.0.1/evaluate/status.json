@@ -1,0 +1,9 @@
+{"date": "8/6/2025", "time": "17:18:36", "status": "STARTED", "verbosity": "INFO", "message": "Starting Re-Identification evaluation"}
+{"date": "8/6/2025", "time": "17:21:38", "status": "RUNNING", "verbosity": "INFO", "message": "Evaluation metrics generated.", "kpi": {"mAP": 0.3}}
+{"date": "8/6/2025", "time": "17:21:38", "status": "FAILURE", "verbosity": "INFO", "message": "'NoneType' object has no attribute 'write'", "kpi": {"mAP": 0.3}}
+{"date": "8/6/2025", "time": "17:22:41", "status": "STARTED", "verbosity": "INFO", "message": "Starting Re-Identification evaluation"}
+{"date": "8/6/2025", "time": "17:24:40", "status": "RUNNING", "verbosity": "INFO", "message": "Evaluation metrics generated.", "kpi": {"mAP": 0.1}}
+{"date": "8/6/2025", "time": "17:24:40", "status": "FAILURE", "verbosity": "INFO", "message": "'NoneType' object has no attribute 'write'", "kpi": {"mAP": 0.1}}
+{"date": "8/6/2025", "time": "17:25:29", "status": "STARTED", "verbosity": "INFO", "message": "Starting Re-Identification evaluation"}
+{"date": "8/6/2025", "time": "17:27:27", "status": "RUNNING", "verbosity": "INFO", "message": "Evaluation metrics generated.", "kpi": {"mAP": 0.1}}
+{"date": "8/6/2025", "time": "17:27:27", "status": "FAILURE", "verbosity": "INFO", "message": "'NoneType' object has no attribute 'write'", "kpi": {"mAP": 0.1}}

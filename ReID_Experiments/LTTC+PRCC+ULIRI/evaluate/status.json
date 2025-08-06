@@ -1,0 +1,32 @@
+{"date": "8/4/2025", "time": "17:44:52", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "8/4/2025", "time": "17:44:52", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/LTTC+PRCC+ULIRI/results_0.0.1/train/model_epoch_049_step_228122.pth"}
+{"date": "8/4/2025", "time": "17:44:53", "status": "FAILURE", "verbosity": "INFO", "message": "Error(s) in loading state_dict for ReIdentificationModel:\n\tsize mismatch for model.classifier.weight: copying a param with shape torch.Size([254, 256]) from checkpoint, the shape in current model is torch.Size([310, 256])."}
+{"date": "8/4/2025", "time": "17:45:22", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "8/4/2025", "time": "17:45:22", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/LTTC+PRCC+ULIRI/results_0.0.1/train/model_epoch_049_step_228122.pth"}
+{"date": "8/4/2025", "time": "17:57:47", "status": "RUNNING", "verbosity": "INFO", "message": "Test metrics generated.", "kpi": {"mAP": 0.7}}
+{"date": "8/4/2025", "time": "17:57:48", "status": "RUNNING", "verbosity": "INFO", "message": "Evaluate finished successfully.", "kpi": {"mAP": 0.7}}
+{"date": "8/4/2025", "time": "18:0:41", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "8/4/2025", "time": "18:0:41", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/LTTC+PRCC+ULIRI/results_0.0.1/train/model_epoch_049_step_228122.pth"}
+{"date": "8/4/2025", "time": "18:0:59", "status": "RUNNING", "verbosity": "INFO", "message": "Test metrics generated.", "kpi": {"mAP": 0.5}}
+{"date": "8/4/2025", "time": "18:0:59", "status": "RUNNING", "verbosity": "INFO", "message": "Evaluate finished successfully.", "kpi": {"mAP": 0.5}}
+{"date": "8/4/2025", "time": "18:1:30", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "8/4/2025", "time": "18:1:30", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/LTTC+PRCC+ULIRI/results_0.0.1/train/model_epoch_049_step_228122.pth"}
+{"date": "8/4/2025", "time": "18:1:31", "status": "FAILURE", "verbosity": "INFO", "message": "'/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/data/bounding_box_test' is not available"}
+{"date": "8/4/2025", "time": "18:2:12", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "8/4/2025", "time": "18:2:12", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/LTTC+PRCC+ULIRI/results_0.0.1/train/model_epoch_049_step_228122.pth"}
+{"date": "8/4/2025", "time": "18:2:41", "status": "RUNNING", "verbosity": "INFO", "message": "Test metrics generated.", "kpi": {"mAP": 0.2}}
+{"date": "8/4/2025", "time": "18:2:42", "status": "RUNNING", "verbosity": "INFO", "message": "Evaluate finished successfully.", "kpi": {"mAP": 0.2}}
+{"date": "8/6/2025", "time": "16:41:22", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "8/6/2025", "time": "16:41:22", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/resnet50_market1501_aicity156.tlt"}
+{"date": "8/6/2025", "time": "16:41:23", "status": "FAILURE", "verbosity": "INFO", "message": "No module named 'nvidia_tao_pytorch.cv.re_identification.config'"}
+{"date": "8/6/2025", "time": "16:49:58", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "8/6/2025", "time": "16:49:58", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/resnet50_market1501_aicity156.onnx"}
+{"date": "8/6/2025", "time": "16:49:58", "status": "FAILURE", "verbosity": "INFO", "message": "invalid load key, '\\x08'."}
+{"date": "8/6/2025", "time": "16:59:37", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "8/6/2025", "time": "16:59:37", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/resnet50_market1501_aicity156.tlt"}
+{"date": "8/6/2025", "time": "16:59:37", "status": "FAILURE", "verbosity": "INFO", "message": "No module named 'nvidia_tao_pytorch.cv.re_identification.config'"}
+{"date": "8/6/2025", "time": "17:9:38", "status": "STARTED", "verbosity": "INFO", "message": "Starting Re-Identification evaluation"}
+{"date": "8/6/2025", "time": "17:9:40", "status": "FAILURE", "verbosity": "INFO", "message": "Error(s) in loading state_dict for ReIdentificationModel:\n\tsize mismatch for model.classifier.weight: copying a param with shape torch.Size([907, 256]) from checkpoint, the shape in current model is torch.Size([254, 256])."}
+{"date": "8/6/2025", "time": "17:10:57", "status": "STARTED", "verbosity": "INFO", "message": "Starting Re-Identification evaluation"}
+{"date": "8/6/2025", "time": "17:15:58", "status": "RUNNING", "verbosity": "INFO", "message": "Evaluation metrics generated.", "kpi": {"mAP": 0.2}}
+{"date": "8/6/2025", "time": "17:15:58", "status": "SUCCESS", "verbosity": "INFO", "message": "Evaluation finished successfully", "kpi": {"mAP": 0.2}}

@@ -1,0 +1,26 @@
+{
+    "model_epoch_009_step_29380": {
+        "mAP": 0.977,
+        "cmc": {
+            "Rank-1": 1.0,
+            "Rank-5": 1.0,
+            "Rank-10": 1.0
+        }
+    },
+    "model_epoch_012_step_37754": {
+        "mAP": 0.972,
+        "cmc": {
+            "Rank-1": 1.0,
+            "Rank-5": 1.0,
+            "Rank-10": 1.0
+        }
+    },
+    "reid_model_latest": {
+        "mAP": 0.972,
+        "cmc": {
+            "Rank-1": 1.0,
+            "Rank-5": 1.0,
+            "Rank-10": 1.0
+        }
+    }
+}

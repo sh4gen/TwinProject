@@ -1,0 +1,47 @@
+results_dir: "/home/ika/yzlm/TwinProject/ReID_Experiments/LTTC+PRCC+ULIRI/results_0.0.1"
+encryption_key: nvidia_tao
+
+model:
+  backbone: resnet_50
+  last_stride: 1
+  pretrain_choice: self
+  pretrained_model_path: /home/ika/yzlm/TwinProject/ReID_Experiments/resnet50_market1501_aicity156.tlt
+  input_channels: 3
+  input_width: 126
+  input_height: 350
+  neck: bnneck
+  feat_dim: 256
+  neck_feat: after
+  metric_loss_type: triplet
+  with_center_loss: false
+  with_flip_feature: false
+  label_smooth: true
+
+
+dataset:
+  train_dataset_dir: "/home/ika/yzlm/TwinProject/ReID_Experiments/ULIRI/data/bounding_box_train"
+  test_dataset_dir: "/home/ika/yzlm/TwinProject/ReID_Experiments/ULIRI/data/bounding_box_test"
+  query_dataset_dir: "/home/ika/yzlm/TwinProject/ReID_Experiments/ULIRI/data/query"
+  num_classes: 907
+  batch_size: 16
+  val_batch_size: 32
+  num_workers: 8
+  pixel_mean: [0.448, 0.433, 0.431]
+  pixel_std: [0.293, 0.284, 0.279]
+  padding: 10
+  prob: 0.6
+  re_prob: 0.6
+  sampler: softmax_triplet
+  num_instances: 2
+
+evaluate:
+  test_dataset: null
+  query_dataset: null
+
+re_ranking:
+  re_ranking: true
+  k1: 20
+  k2: 6
+  lambda_value: 0.3
+  max_rank: 10
+  num_query: 10

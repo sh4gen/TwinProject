@@ -1,0 +1,21 @@
+{"date": "8/3/2025", "time": "11:30:36", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "8/3/2025", "time": "11:30:36", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/ULIRI/results_0.0.1/train/model_epoch_009_step_29380.pth"}
+{"date": "8/3/2025", "time": "11:30:37", "status": "FAILURE", "verbosity": "INFO", "message": "Error(s) in loading state_dict for ReIdentificationModel:\n\tsize mismatch for model.classifier.weight: copying a param with shape torch.Size([92, 256]) from checkpoint, the shape in current model is torch.Size([115, 256])."}
+{"date": "8/3/2025", "time": "11:31:9", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "8/3/2025", "time": "11:31:9", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/ULIRI/results_0.0.1/train/model_epoch_009_step_29380.pth"}
+{"date": "8/3/2025", "time": "11:33:3", "status": "RUNNING", "verbosity": "INFO", "message": "Test metrics generated.", "kpi": {"mAP": 1.0}}
+{"date": "8/3/2025", "time": "11:33:3", "status": "RUNNING", "verbosity": "INFO", "message": "Evaluate finished successfully.", "kpi": {"mAP": 1.0}}
+{"date": "8/3/2025", "time": "11:44:40", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "8/3/2025", "time": "11:44:40", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/ULIRI/results_0.0.1/train/model_epoch_009_step_29380.pth"}
+{"date": "8/3/2025", "time": "11:46:32", "status": "RUNNING", "verbosity": "INFO", "message": "Test metrics generated.", "kpi": {"mAP": 1.0}}
+{"date": "8/3/2025", "time": "11:46:33", "status": "RUNNING", "verbosity": "INFO", "message": "Evaluate finished successfully.", "kpi": {"mAP": 1.0}}
+{"date": "8/3/2025", "time": "12:45:31", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "8/3/2025", "time": "12:45:31", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/ULIRI/results_0.0.2/train/model_epoch_009_step_25519.pth"}
+{"date": "8/3/2025", "time": "12:45:32", "status": "FAILURE", "verbosity": "INFO", "message": "Error(s) in loading state_dict for ReIdentificationModel:\n\tsize mismatch for model.classifier.weight: copying a param with shape torch.Size([80, 256]) from checkpoint, the shape in current model is torch.Size([115, 256])."}
+{"date": "8/3/2025", "time": "12:45:53", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "8/3/2025", "time": "12:45:53", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/ULIRI/results_0.0.2/train/model_epoch_009_step_25519.pth"}
+{"date": "8/3/2025", "time": "12:46:20", "status": "FAILURE", "verbosity": "INFO", "message": "CUDA out of memory. Tried to allocate 2.39 GiB. GPU 0 has a total capacity of 11.50 GiB of which 1.76 GiB is free. Including non-PyTorch memory, this process has 9.46 GiB memory in use. Of the allocated memory 9.13 GiB is allocated by PyTorch, and 105.86 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"}
+{"date": "8/3/2025", "time": "12:47:2", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "8/3/2025", "time": "12:47:2", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/ULIRI/results_0.0.2/train/model_epoch_009_step_25519.pth"}
+{"date": "8/3/2025", "time": "12:52:5", "status": "RUNNING", "verbosity": "INFO", "message": "Test metrics generated.", "kpi": {"mAP": 0.9}}
+{"date": "8/3/2025", "time": "12:52:5", "status": "RUNNING", "verbosity": "INFO", "message": "Evaluate finished successfully.", "kpi": {"mAP": 0.9}}

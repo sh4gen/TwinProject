@@ -229,16 +229,10 @@ def analyze_reid_dataset(dataset_path, save_stats=True):
     yaml_config = f"""
 dataset:
   num_classes: {stats['num_classes']}
-  batch_size: 64  # Adjust based on GPU memory
-  val_batch_size: 128
-  num_workers: 4
+
   pixel_mean: {[round(x, 3) for x in stats['pixel_mean']]}
   pixel_std: {[round(x, 3) for x in stats['pixel_std']]}
-  padding: 10
-  prob: 0.5
-  re_prob: 0.5
-  sampler: softmax_triplet
-  num_instances: 4
+
 
 model:
   input_width: {stats['image_stats']['avg_width'] if stats['image_stats']['avg_width'] > 0 else 128}
@@ -266,6 +260,6 @@ model:
 
 # Example usage
 if __name__ == "__main__":
-    dataset_path = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID"
+    dataset_path = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTTC+PRCC+ULIRI/data"
     
     stats = analyze_reid_dataset(dataset_path, save_stats=True)

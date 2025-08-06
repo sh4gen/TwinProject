@@ -125,12 +125,12 @@ class EvaluatePipeTAO(p.Pipe):
 
 
 if __name__ == '__main__':
-    CONFIG_FILE = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/ltcc_gpt.yaml"
-    CHECKPOINT_DIR = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/results_0.1.4/train"
-    QUERY_DIR = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/data/query"
-    GALLERY_DIR = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/data/bounding_box_test"
-    RESULTS_DIR = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/evaluation_results_0.1.4"
-    USE_RERANK = True
+    CONFIG_FILE = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTTC+PRCC+ULIRI/combined.yaml"
+    CHECKPOINT_DIR = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTTC+PRCC+ULIRI/results_0.0.1/train"
+    QUERY_DIR = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTTC+PRCC+ULIRI/data/query"
+    GALLERY_DIR = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTTC+PRCC+ULIRI/data/bounding_box_test"
+    RESULTS_DIR = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTTC+PRCC+ULIRI/evaluation_results_0.0.1"
+    USE_RERANK = False
     
     if 'DOCKER_HOST' in os.environ:
         os.environ.pop('DOCKER_HOST')
