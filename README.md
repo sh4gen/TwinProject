@@ -50,7 +50,7 @@ This project, aims to leverage cutting-edge NVIDIA technologies, particularly NV
 
 
 
-  - **İsmail Kağan Acar** - *Created README* -
+  - **İsmail Kağan Acar** - 
 
 
     [ikaganacar1](https://github.com/ikaganacar1)
