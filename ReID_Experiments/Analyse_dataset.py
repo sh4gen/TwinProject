@@ -260,6 +260,6 @@ model:
 
 # Example usage
 if __name__ == "__main__":
-    dataset_path = "/home/ika/yzlm/TwinProject/ReID_Experiments/LTTC+PRCC+ULIRI/data"
+    dataset_path = "/home/ika/yzlm/TwinProject/ReID_Experiments/Viper/data"
     
     stats = analyze_reid_dataset(dataset_path, save_stats=True)

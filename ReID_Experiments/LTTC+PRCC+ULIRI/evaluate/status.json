@@ -30,3 +30,11 @@
 {"date": "8/6/2025", "time": "17:10:57", "status": "STARTED", "verbosity": "INFO", "message": "Starting Re-Identification evaluation"}
 {"date": "8/6/2025", "time": "17:15:58", "status": "RUNNING", "verbosity": "INFO", "message": "Evaluation metrics generated.", "kpi": {"mAP": 0.2}}
 {"date": "8/6/2025", "time": "17:15:58", "status": "SUCCESS", "verbosity": "INFO", "message": "Evaluation finished successfully", "kpi": {"mAP": 0.2}}
+{"date": "9/13/2025", "time": "11:35:38", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "9/13/2025", "time": "11:35:38", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/LTTC+PRCC+ULIRI/results_0.0.1/train/model_epoch_139_step_638755.pth"}
+{"date": "9/13/2025", "time": "11:36:41", "status": "RUNNING", "verbosity": "INFO", "message": "Test metrics generated.", "kpi": {"mAP": 0.2}}
+{"date": "9/13/2025", "time": "11:36:41", "status": "RUNNING", "verbosity": "INFO", "message": "Evaluate finished successfully.", "kpi": {"mAP": 0.2}}
+{"date": "9/13/2025", "time": "11:53:37", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification evaluate."}
+{"date": "9/13/2025", "time": "11:53:37", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/LTTC+PRCC+ULIRI/results_0.0.1/train/model_epoch_139_step_638755.pth"}
+{"date": "9/13/2025", "time": "11:55:0", "status": "RUNNING", "verbosity": "INFO", "message": "Test metrics generated.", "kpi": {"mAP": 0.6}}
+{"date": "9/13/2025", "time": "11:55:0", "status": "RUNNING", "verbosity": "INFO", "message": "Evaluate finished successfully.", "kpi": {"mAP": 0.6}}

@@ -56,7 +56,7 @@ dataset:
   train_dataset_dir: /home/ika/yzlm/TwinProject/ReID_Experiments/ULIRI/data/bounding_box_train
   test_dataset_dir: /home/ika/yzlm/TwinProject/ReID_Experiments/ULIRI/data/bounding_box_test
   query_dataset_dir: /home/ika/yzlm/TwinProject/ReID_Experiments/ULIRI/data/query
-  num_classes: 115
+  num_classes: 80
   batch_size: 16
   val_batch_size: 32
   num_workers: 8
