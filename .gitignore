@@ -19,3 +19,4 @@ ReID_Pipeline/__pycache__
 *.tar.gz
 *.tar
 *.db
+*.avi
