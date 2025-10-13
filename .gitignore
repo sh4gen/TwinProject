@@ -20,3 +20,9 @@ ReID_Pipeline/__pycache__
 *.tar
 *.db
 *.avi
+ReID_Inference/__pycache__
+reid_gallery
+ReID_Inference/__pycache__
+ReID_Inference/mot16-02
+ReID_Inference/mot16-05
+ReID_Inference/__pycache__

@@ -273,8 +273,8 @@ if __name__ == "__main__":
     
     # Process video file
     pipeline.process_video(
-        input_path='/home/ika/yzlm/TwinProject/ReID_Inference/testing_videos/20.avi',
-        output_path='/home/ika/yzlm/TwinProject/ReID_Inference/result_videos/20_gallery.avi',
+        input_path='/home/ika/yzlm/TwinProject/ReID_Inference/mot16-05/MOT16-05.mp4',
+        output_path='/home/ika/yzlm/TwinProject/ReID_Inference/mot16-05/MOT16-05_result.mp4',
         display=True,
         save_stats=True
     )

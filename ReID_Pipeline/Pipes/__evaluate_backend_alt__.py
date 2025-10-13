@@ -215,7 +215,7 @@ if __name__ == "__main__":
     feature_batch_size = 256
     eval_batch_size = 1024
     topk = (1, 5, 10)
-    use_rerank = False  # True yaparsan re-ranking aktif olur
+    use_rerank = False  
 
     reid_pipeline(
         onnx_path, query_dir, gallery_dir,
