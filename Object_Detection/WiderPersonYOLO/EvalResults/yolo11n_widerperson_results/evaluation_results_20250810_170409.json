@@ -1,0 +1,32 @@
+{
+  "mAP50": 0.602868592728622,
+  "mAP50-95": 0.24327656240055937,
+  "mAP75": 0.1416750504325121,
+  "precision": 0.7488965125173875,
+  "recall": 0.517201038277337,
+  "val_speed": {
+    "preprocess_ms": 0.28416355299998486,
+    "inference_ms": 4.622831949999991,
+    "postprocess_ms": 1.3319080060000061,
+    "total_ms": 6.239920884999975
+  },
+  "inference_speed": {
+    "num_images": 1000,
+    "mean_time_ms": 11.92198942900015,
+    "std_time_ms": 5.4713316390245,
+    "min_time_ms": 8.437061999998718,
+    "max_time_ms": 75.44737099999566,
+    "percentiles": {
+      "50th": 10.922348999997666,
+      "90th": 12.859459999997114,
+      "95th": 14.313707500004108,
+      "99th": 38.614511619995675
+    },
+    "fps": 83.87861824197793
+  },
+  "predictions": {
+    "output_dir": "/home/ika1/yzlm/Re-id/object_detection_Re-ID/Evaluation/yolov8_predictions_20250810_170314",
+    "total_detections": 1260269,
+    "avg_detections_per_image": 287.60132359653124
+  }
+}

@@ -1,0 +1,8 @@
+
+    Summary Statistics:
+    - Average PyTorch FPS: 48.1
+    - Average TensorRT FPS: 111.8
+    - Average Speedup: 2.63x
+    - Max Speedup: 4.14x (YOLOV8X)
+    - Min Speedup: 1.58x (YOLOV8N)
+    

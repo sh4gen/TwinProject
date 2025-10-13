@@ -1,0 +1,16 @@
+{
+  "model": "/home/ika1/yzlm/Re-id/object_detection_Re-ID/WiderPersonYOLO/yolov9s_tensorrt_results/yolov9s.engine",
+  "device": "0",
+  "is_tensorrt": true,
+  "speed": {
+    "batch_size": 16,
+    "mean_ms": 7.579816279294604,
+    "std_ms": 2.0173561993504516,
+    "fps": 131.92931901682746
+  },
+  "predictions": {
+    "output_dir": "/home/ika1/yzlm/Re-id/object_detection_Re-ID/WiderPersonYOLO/yolov9s_tensorrt_results/predictions_20250811_142629",
+    "total_detections": 1076797,
+    "avg_per_image": 245.73185759926974
+  }
+}

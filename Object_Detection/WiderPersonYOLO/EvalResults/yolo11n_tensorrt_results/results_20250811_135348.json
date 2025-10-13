@@ -1,0 +1,16 @@
+{
+  "model": "/home/ika1/yzlm/Re-id/object_detection_Re-ID/WiderPersonYOLO/TensorRtModels/yolo11n.engine",
+  "device": "0",
+  "is_tensorrt": true,
+  "speed": {
+    "batch_size": 16,
+    "mean_ms": 6.259275896487004,
+    "std_ms": 2.1305939874337296,
+    "fps": 159.76288895673162
+  },
+  "predictions": {
+    "output_dir": "yolo11n_tensorrt_results/predictions_20250811_135313",
+    "total_detections": 1185136,
+    "avg_per_image": 270.4554997717937
+  }
+}

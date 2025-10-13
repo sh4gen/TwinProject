@@ -1,0 +1,80 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>PyTorch vs TensorRT Comparison Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; }
+            h1 { color: #333; }
+            .plot { margin: 20px 0; text-align: center; }
+            img { max-width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; }
+            .summary { background-color: #f0f0f0; padding: 20px; border-radius: 5px; }
+        </style>
+    </head>
+    <body>
+        <h1>PyTorch vs TensorRT Performance Comparison</h1>
+
+        <div class="summary">
+            <h2>Summary Statistics</h2>
+            <pre>
+    Summary Statistics:
+    - Average PyTorch FPS: 48.1
+    - Average TensorRT FPS: 111.8
+    - Average Speedup: 2.63x
+    - Max Speedup: 4.14x (YOLOV8X)
+    - Min Speedup: 1.58x (YOLOV8N)
+    </pre>
+        </div>
+
+        <div class="plot">
+            <h2>FPS Comparison</h2>
+            <img src="fps_comparison.png" alt="FPS Comparison">
+        </div>
+
+        <div class="plot">
+            <h2>Speedup Factors</h2>
+            <img src="speedup_factors.png" alt="Speedup Factors">
+        </div>
+
+        <div class="plot">
+            <h2>Latency Comparison</h2>
+            <img src="latency_comparison.png" alt="Latency Comparison">
+        </div>
+
+        <div class="plot">
+            <h2>Speedup by Model Size</h2>
+            <img src="speedup_by_size.png" alt="Speedup by Size">
+        </div>
+
+        <div class="plot">
+            <h2>FPS vs Accuracy Trade-off</h2>
+            <img src="fps_vs_map.png" alt="FPS vs mAP">
+        </div>
+
+        <div class="plot">
+            <h2>Performance by Version</h2>
+            <img src="performance_by_version.png" alt="Performance by Version">
+        </div>
+
+        <div class="plot">
+            <h2>Speedup Heatmap</h2>
+            <img src="speedup_heatmap.png" alt="Speedup Heatmap">
+        </div>
+
+        <div class="plot">
+            <h2>Speedup Distribution</h2>
+            <img src="speedup_distribution.png" alt="Speedup Distribution">
+        </div>
+
+        <div class="plot">
+            <h2>Latency Reduction</h2>
+            <img src="latency_reduction.png" alt="Latency Reduction">
+        </div>
+
+        <div class="plot">
+            <h2>Radar Comparison</h2>
+            <img src="radar_comparison.png" alt="Radar Comparison">
+        </div>
+    </body>
+    </html>
+    
