@@ -168,9 +168,9 @@ inference:
 # ===                    Export Ayarları                        ===
 # =================================================================
 export:
-  results_dir: null
-  checkpoint: null
-  onnx_file: null
+  results_dir: /home/ika/yzlm/TwinProject/export_ltcc
+  checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/LTCC_ReID/results_0.1.4/train/model_epoch_039_step_21863.pth
+  onnx_file: reid_ltcc_new.onnx
   gpu_id: 0
 
 # =================================================================

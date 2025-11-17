@@ -11,3 +11,6 @@
 {"date": "9/1/2025", "time": "17:38:33", "status": "RUNNING", "verbosity": "INFO", "message": "Eval metrics generated.", "kpi": {"cmc_rank_1": "0.99981326", "cmc_rank_5": "1.0", "cmc_rank_10": "1.0", "mAP": "0.8452069163322449"}}
 {"epoch": 4, "step": 12767, "max_epoch": 59, "max_step": 153600, "time_per_epoch": "0:02:07.395265", "time_per_step": "0:00:00.040172", "eta": "1:56:46.739554", "date": "9/1/2025", "time": "17:38:34", "status": "RUNNING", "verbosity": "INFO", "message": "Training loop in progress", "kpi": {"cmc_rank_1": "0.99981326", "cmc_rank_5": "1.0", "cmc_rank_10": "1.0", "mAP": "0.8452069163322449"}}
 {"date": "9/1/2025", "time": "17:38:34", "status": "RUNNING", "verbosity": "INFO", "message": "Train metrics generated.", "kpi": {"train_loss": 1.6947094202041626, "train_acc": 0.860176146030426}}
+{"date": "11/9/2025", "time": "16:34:21", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification train."}
+{"date": "11/9/2025", "time": "16:34:21", "status": "RUNNING", "verbosity": "INFO", "message": "Resuming training from checkpoint: /home/ika/yzlm/TwinProject/ReID_Experiments/ULIRI/results_0.1.1/train/model_epoch_004_step_12767.pth"}
+{"date": "11/9/2025", "time": "16:34:24", "status": "STARTED", "verbosity": "INFO", "message": "Starting Training Loop."}

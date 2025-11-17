@@ -1,0 +1,6 @@
+{"date": "10/19/2025", "time": "14:32:40", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification export."}
+{"date": "10/19/2025", "time": "14:32:42", "status": "RUNNING", "verbosity": "INFO", "message": "Export finished successfully."}
+{"date": "10/21/2025", "time": "17:33:0", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification export."}
+{"date": "10/21/2025", "time": "17:33:0", "status": "FAILURE", "verbosity": "INFO", "message": "Default output file /home/ika/Desktop/reid_ltcc.onnx already exists."}
+{"date": "11/9/2025", "time": "16:31:45", "status": "STARTED", "verbosity": "INFO", "message": "Starting ReIdentification export."}
+{"date": "11/9/2025", "time": "16:31:48", "status": "RUNNING", "verbosity": "INFO", "message": "Export finished successfully."}
