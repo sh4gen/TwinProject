@@ -1,0 +1,7 @@
+split	images	ids	path
+duke_train	8784	702	/mnt/2tb_ssd/TwinProject/experiments/reid/duke/data/bounding_box_train
+syntetic_original_train	233840	39	/mnt/2tb_ssd/TwinProject/datasets/final_syntetic_market1501/bounding_box_train
+syntetic_filtered_train	6152	39	/mnt/2tb_ssd/TwinProject/experiments/reid/duke_syntetic_filtered_seq/data/filtered_syntetic/bounding_box_train
+combined_train	14936	741	/mnt/2tb_ssd/TwinProject/experiments/reid/duke_syntetic_filtered_seq/data/duke_filtered_syntetic/bounding_box_train
+duke_query	702	702	/mnt/2tb_ssd/TwinProject/experiments/reid/duke/data/query
+duke_gallery	10541	1110	/mnt/2tb_ssd/TwinProject/experiments/reid/duke/data/bounding_box_test
