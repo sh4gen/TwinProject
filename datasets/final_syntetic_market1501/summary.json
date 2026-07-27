@@ -1,0 +1,11 @@
+{
+  "annotations": 67900,
+  "duplicate_annotation_files": 34,
+  "processed_images": 67749,
+  "written": 233840,
+  "skipped_invalid": 2100,
+  "skipped_non_person": 0,
+  "skipped_missing_image": 0,
+  "skipped_existing": 0,
+  "errors": 0
+}

@@ -1,0 +1,7 @@
+__pycache__/
+data/
+results/
+evaluate/
+manifests/
+training_controller.log
+training_controller.pid

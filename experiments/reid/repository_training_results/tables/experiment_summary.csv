@@ -1,0 +1,52 @@
+target,experiment,local_checkpoints,passed,failed,missing,historical_only,best_checkpoint,best_map
+CCVID,CCVID status-only history,0,0,0,0,1,model_epoch_029_step_50729,20.0%
+CCVID,Pretrained Swin on CCVID (raw),0,0,0,0,1,NA,NA
+Combined stress,Generalized Swin combined stress (raw),12,12,0,0,0,model_epoch_119_step_348594,46.2%
+Duke,Duke + filtered synthetic Swin,20,20,0,0,0,model_epoch_099_step_43340,86.4%
+Duke,Duke + synthetic Swin,20,20,0,0,0,model_epoch_109_step_61202,85.9%
+Duke,Duke plain Swin external final,0,0,0,0,1,plain_duke_model_epoch_199_step_10800,89.0%
+Duke,Duke plain Swin local partial,1,1,0,0,0,model_epoch_004_step_02206,10.3%
+Duke,Generalized Swin on Duke (raw),12,12,0,0,0,model_epoch_119_step_348594,55.4%
+Duke,Pretrained Swin on Duke (raw),0,0,0,0,1,pretrained_swin_market1501_aicity156,4.4%
+Duke,Synthetic-only filtered 100k on Duke (raw),12,12,0,0,0,model_epoch_009_step_18171,25.7%
+Duke,Synthetic-only filtered 30k on Duke (raw),12,12,0,0,0,model_epoch_009_step_05501,29.7%
+LTCC,Generalized Swin on LTCC (raw),12,12,0,0,0,model_epoch_119_step_348594,29.5%
+LTCC,LTCC + 10% synthetic Swin,30,29,1,0,0,model_epoch_029_step_59207,40.7%
+LTCC,LTCC + 25% synthetic Swin,2,2,0,0,0,model_epoch_009_step_40440,34.9%
+LTCC,LTCC + 50% synthetic Swin,20,20,0,0,0,model_epoch_014_step_112349,27.1%
+LTCC,LTCC + filtered synthetic Swin,30,30,0,0,0,model_epoch_044_step_20872,43.8%
+LTCC,LTCC + unfiltered synthetic Swin,13,13,0,0,0,model_epoch_024_step_18820,43.1%
+LTCC,LTCC ResNet 0.1.1,0,0,0,0,12,model_epoch_009_step_01337,2.5%
+LTCC,LTCC ResNet 0.1.2,0,0,0,0,11,model_epoch_012_step_01700,2.6%
+LTCC,LTCC ResNet 0.1.3,6,6,0,0,0,model_epoch_039_step_10831,21.1%
+LTCC,LTCC ResNet 0.1.4,6,6,0,0,0,model_epoch_059_step_32791,23.6%
+LTCC,LTCC ResNet resume failed,1,0,0,1,0,NA,NA
+LTCC,LTCC Swin 1.0.1,15,15,0,0,0,model_epoch_069_step_38346,17.9%
+LTCC,LTCC Swin misfiled 0.1.4 epoch 0,1,1,0,0,0,model_epoch_000_step_00000,7.1%
+LTCC,LTCC Swin plain,30,30,0,0,0,model_epoch_099_step_54742,23.8%
+LTCC,LTCC Swin resume failed,1,0,0,1,0,NA,NA
+LTCC,LTCC archived v1.0.0 curve,0,0,0,0,34,archived_epoch_024,37.6%
+LTCC,LTCC archived v1.0.1 curve,0,0,0,0,23,archived_epoch_011,40.6%
+LTCC,LTCC percentage sweep smoke,1,1,0,0,0,model_epoch_001_step_02621,5.8%
+LTCC,LTCC pretrained reference,0,0,0,0,1,pretrained_reference,5.6%
+LTCC,LTCC synthetic transfer ResNet,4,4,0,0,0,model_epoch_004_step_00185,2.8%
+LTCC,Pretrained Swin marker,0,0,0,0,1,swin_base_market1501_aicity156_featuredim1024,7.5%
+LTCC,Pretrained Swin on LTCC (raw),0,0,0,0,1,pretrained_swin_market1501_aicity156,5.4%
+LTCC,Synthetic-only Swin evaluated on LTCC,3,3,0,0,0,model_epoch_004_step_22005,6.4%
+LTCC,Synthetic-only filtered 100k on LTCC (raw),12,12,0,0,0,model_epoch_009_step_18171,12.3%
+LTCC,Synthetic-only filtered 30k on LTCC (raw),12,12,0,0,0,model_epoch_009_step_05501,16.2%
+PRCC,Generalized Swin on PRCC (raw),12,12,0,0,0,model_epoch_119_step_348594,71.5%
+PRCC,PRCC + filtered synthetic Swin,12,12,0,0,0,model_epoch_099_step_58750,72.4%
+PRCC,PRCC ResNet 0.0.1,6,6,0,0,0,model_epoch_059_step_85107,61.7%
+PRCC,PRCC plain Swin,12,12,0,0,0,model_epoch_099_step_46746,72.1%
+PRCC,PRCC pretrained reference,0,0,0,0,1,pretrained_reference,12.5%
+PRCC,Pretrained Swin on PRCC (raw),0,0,0,0,1,pretrained_swin_market1501_aicity156,18.7%
+PRCC,Synthetic-only filtered 100k on PRCC (raw),12,12,0,0,0,model_epoch_029_step_54551,30.3%
+PRCC,Synthetic-only filtered 30k on PRCC (raw),12,12,0,0,0,model_epoch_009_step_05501,37.7%
+Synthetic Market1501,Pretrained Swin on synthetic Market1501 (raw),0,0,0,0,1,pretrained_swin_market1501_aicity156,80.5%
+ULIRI,Pretrained Swin on ULIRI (raw),0,0,0,0,1,pretrained_swin_market1501_aicity156,12.4%
+ULIRI,ULIRI ResNet 0.0.1,2,2,0,0,0,model_epoch_009_step_29380,97.7%
+ULIRI,ULIRI ResNet 0.0.1 epoch 13 on current split,1,1,0,0,0,model_epoch_013_step_38333,99.8%
+ULIRI,ULIRI ResNet 0.0.2,1,1,0,0,0,model_epoch_009_step_25519,92.1%
+ULIRI,ULIRI ResNet 0.1.1 status-only,0,0,0,0,1,training_status_latest,84.5%
+ULIRI,ULIRI pretrained reference,0,0,0,0,1,pretrained_reference,34.2%

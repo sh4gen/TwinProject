@@ -1,0 +1,5 @@
+split	images	ids	path
+syntetic_original_train	233840	39	/mnt/2tb_ssd/TwinProject/datasets/final_syntetic_market1501/bounding_box_train
+syntetic_only_filtered_100k	100000	39	/mnt/2tb_ssd/TwinProject/experiments/reid/syntetic_only_filtered_100k/data/syntetic_only_filtered_100k/bounding_box_train
+prcc_query_eval_only	71	71	/mnt/2tb_ssd/TwinProject/experiments/reid/prcc/data/query
+prcc_gallery_eval_only	10800	71	/mnt/2tb_ssd/TwinProject/experiments/reid/prcc/data/bounding_box_test

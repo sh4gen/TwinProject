@@ -1,0 +1,7 @@
+__pycache__/
+data/
+results/
+evaluate/
+filtered_syntetic_manifest.csv
+training_controller.log
+training_controller.pid

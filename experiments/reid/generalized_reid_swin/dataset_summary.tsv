@@ -1,0 +1,6 @@
+split	images	ids	path
+generalized_train	154258	875	/mnt/2tb_ssd/TwinProject/experiments/reid/generalized_reid_swin/data/train/bounding_box_train
+validation_query	93	93	/mnt/2tb_ssd/TwinProject/experiments/reid/generalized_reid_swin/data/validation/query
+validation_gallery	3827	93	/mnt/2tb_ssd/TwinProject/experiments/reid/generalized_reid_swin/data/validation/bounding_box_test
+official_stress_query	1266	848	/mnt/2tb_ssd/TwinProject/experiments/reid/generalized_reid_swin/data/official_stress/query
+official_stress_gallery	28367	1256	/mnt/2tb_ssd/TwinProject/experiments/reid/generalized_reid_swin/data/official_stress/bounding_box_test

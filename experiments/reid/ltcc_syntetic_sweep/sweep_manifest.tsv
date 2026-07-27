@@ -1,0 +1,7 @@
+experiment	percent	ltcc_images	synthetic_images	ltcc_ids	synthetic_ids
+ltcc_syntetic_10	10	9576	23385	77	39
+ltcc_syntetic_25	25	9576	58470	77	39
+ltcc_syntetic_50	50	9576	116924	77	39
+ltcc_syntetic_75	75	9576	175391	77	39
+ltcc_syntetic_100	100	9576	233840	77	39
+syntetic_only_100	100	0	233840	0	39

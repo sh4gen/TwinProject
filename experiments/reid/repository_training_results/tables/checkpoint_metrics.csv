@@ -1,0 +1,450 @@
+target,series,experiment,checkpoint,epoch,step,mAP,Rank-1,Rank-5,Rank-10,status,source
+CCVID,ccvid_status_only,CCVID status-only history,model_epoch_029_step_50729,29,50729,20.0,,,,passed,experiments/reid/ccvid/results/evaluate/status.json
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_009_step_04327,9,4327,79.6,83.8,90.7,93.2,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_019_step_08660,19,8660,83.9,87.7,92.5,94.0,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_029_step_12985,29,12985,84.3,87.0,92.9,94.7,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_039_step_17318,39,17318,84.0,88.3,92.6,94.2,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_049_step_21654,49,21654,85.3,87.9,93.3,94.7,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_059_step_25970,59,25970,85.8,88.3,94.2,95.3,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_069_step_30310,69,30310,86.3,88.7,93.9,95.6,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_079_step_34658,79,34658,85.6,88.6,94.0,95.0,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_089_step_38996,89,38996,85.1,88.3,93.4,94.7,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_099_step_43340,99,43340,86.4,89.7,94.4,95.3,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_109_step_47673,109,47673,85.5,88.0,93.4,94.4,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_119_step_52003,119,52003,85.2,88.3,93.4,94.9,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_129_step_56349,129,56349,84.7,89.2,92.9,94.6,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_139_step_60691,139,60691,85.7,88.9,93.4,94.7,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_149_step_65017,149,65017,84.5,88.3,92.6,94.0,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_159_step_69359,159,69359,84.0,87.5,92.0,94.7,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_169_step_73692,169,73692,84.9,88.5,93.6,94.6,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_179_step_78016,179,78016,85.5,87.9,93.3,94.0,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_189_step_82366,189,82366,85.0,89.3,93.4,94.4,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_filtered_synthetic_3_variants,Duke + filtered synthetic Swin,model_epoch_199_step_86706,199,86706,84.7,89.5,93.2,94.6,passed,experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse.tsv
+Duke,duke_swin_plain_external,Duke plain Swin external final,plain_duke_model_epoch_199_step_10800,199,10800,89.0,90.6,95.6,96.6,passed,experiments/reid/duke/evaluation_results_swin_working_plain/summary.tsv
+Duke,duke_swin_plain_local_partial,Duke plain Swin local partial,model_epoch_004_step_02206,4,2206,10.3,12.4,22.4,27.9,passed,experiments/reid/repository_training_results/additional_validation/summary_worker1.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_009_step_05566,9,5566,81.8,86.5,91.9,93.9,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_019_step_11134,19,11134,82.2,84.9,92.3,93.7,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_029_step_16701,29,16701,82.8,85.5,92.6,94.7,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_039_step_22270,39,22270,83.9,86.6,92.5,94.3,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_049_step_27833,49,27833,83.3,86.2,92.5,93.9,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_059_step_33396,59,33396,83.9,87.7,92.7,94.3,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_069_step_38962,69,38962,84.7,87.7,93.2,95.3,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_079_step_44521,79,44521,84.6,86.9,92.6,95.0,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_089_step_50084,89,50084,85.3,88.0,93.3,94.3,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_099_step_55641,99,55641,85.8,87.9,93.2,94.4,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_109_step_61202,109,61202,85.9,89.3,93.4,95.6,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_119_step_66761,119,66761,85.4,87.2,93.6,95.3,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_129_step_72328,129,72328,85.2,86.9,93.2,94.6,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_139_step_77890,139,77890,85.7,88.0,93.3,95.4,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_149_step_83456,149,83456,85.5,88.3,93.3,95.0,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_159_step_89021,159,89021,85.6,88.6,93.0,94.6,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_169_step_94588,169,94588,85.3,87.5,93.4,95.3,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_179_step_100150,179,100150,84.6,87.6,93.6,95.0,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_189_step_105716,189,105716,84.6,87.6,93.3,94.0,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Duke,duke_swin_unfiltered_synthetic,Duke + synthetic Swin,model_epoch_199_step_111283,199,111283,84.3,86.9,92.5,94.4,passed,experiments/reid/duke+syntetic/evaluation_results_swin_working_lowbatch/summary.tsv
+Combined stress,generalized_reid_combined_stress_raw,Generalized Swin combined stress (raw),model_epoch_009_step_29073,9,29073,31.8,54.7,69.7,75.6,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Combined stress,generalized_reid_combined_stress_raw,Generalized Swin combined stress (raw),model_epoch_019_step_58078,19,58078,35.7,58.7,73.8,78.8,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Combined stress,generalized_reid_combined_stress_raw,Generalized Swin combined stress (raw),model_epoch_029_step_87117,29,87117,37.6,61.5,76.9,81.8,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Combined stress,generalized_reid_combined_stress_raw,Generalized Swin combined stress (raw),model_epoch_039_step_116118,39,116118,39.3,63.5,77.9,83.2,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Combined stress,generalized_reid_combined_stress_raw,Generalized Swin combined stress (raw),model_epoch_049_step_145132,49,145132,40.6,64.8,79.5,83.7,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Combined stress,generalized_reid_combined_stress_raw,Generalized Swin combined stress (raw),model_epoch_059_step_174216,59,174216,41.7,66.1,79.9,84.2,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Combined stress,generalized_reid_combined_stress_raw,Generalized Swin combined stress (raw),model_epoch_069_step_203291,69,203291,42.9,67.1,80.9,84.4,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Combined stress,generalized_reid_combined_stress_raw,Generalized Swin combined stress (raw),model_epoch_079_step_232299,79,232299,43.5,67.2,80.8,84.7,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Combined stress,generalized_reid_combined_stress_raw,Generalized Swin combined stress (raw),model_epoch_089_step_261419,89,261419,44.4,68.2,81.6,85.3,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Combined stress,generalized_reid_combined_stress_raw,Generalized Swin combined stress (raw),model_epoch_099_step_290419,99,290419,45.0,68.2,82.0,85.4,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Combined stress,generalized_reid_combined_stress_raw,Generalized Swin combined stress (raw),model_epoch_109_step_319465,109,319465,45.7,69.4,82.3,85.9,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Combined stress,generalized_reid_combined_stress_raw,Generalized Swin combined stress (raw),model_epoch_119_step_348594,119,348594,46.2,70.2,81.8,86.1,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Duke,generalized_reid_duke_raw,Generalized Swin on Duke (raw),model_epoch_009_step_29073,9,29073,37.7,51.4,69.4,75.8,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Duke,generalized_reid_duke_raw,Generalized Swin on Duke (raw),model_epoch_019_step_58078,19,58078,42.5,56.7,75.1,80.2,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Duke,generalized_reid_duke_raw,Generalized Swin on Duke (raw),model_epoch_029_step_87117,29,87117,44.7,59.5,77.4,82.2,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Duke,generalized_reid_duke_raw,Generalized Swin on Duke (raw),model_epoch_039_step_116118,39,116118,46.9,61.7,78.5,83.8,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Duke,generalized_reid_duke_raw,Generalized Swin on Duke (raw),model_epoch_049_step_145132,49,145132,48.5,63.0,79.9,84.3,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Duke,generalized_reid_duke_raw,Generalized Swin on Duke (raw),model_epoch_059_step_174216,59,174216,49.7,64.8,81.2,85.0,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Duke,generalized_reid_duke_raw,Generalized Swin on Duke (raw),model_epoch_069_step_203291,69,203291,51.2,66.2,82.8,85.5,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Duke,generalized_reid_duke_raw,Generalized Swin on Duke (raw),model_epoch_079_step_232299,79,232299,52.1,67.1,83.2,86.0,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Duke,generalized_reid_duke_raw,Generalized Swin on Duke (raw),model_epoch_089_step_261419,89,261419,53.1,68.5,83.6,87.0,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Duke,generalized_reid_duke_raw,Generalized Swin on Duke (raw),model_epoch_099_step_290419,99,290419,53.8,68.7,84.2,87.3,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Duke,generalized_reid_duke_raw,Generalized Swin on Duke (raw),model_epoch_109_step_319465,109,319465,54.8,69.9,84.5,87.9,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+Duke,generalized_reid_duke_raw,Generalized Swin on Duke (raw),model_epoch_119_step_348594,119,348594,55.4,71.2,84.2,88.6,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+LTCC,generalized_reid_ltcc_raw,Generalized Swin on LTCC (raw),model_epoch_009_step_29073,9,29073,20.2,54.6,67.3,73.0,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+LTCC,generalized_reid_ltcc_raw,Generalized Swin on LTCC (raw),model_epoch_019_step_58078,19,58078,22.0,56.8,69.2,74.4,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+LTCC,generalized_reid_ltcc_raw,Generalized Swin on LTCC (raw),model_epoch_029_step_87117,29,87117,23.5,59.4,73.2,78.5,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+LTCC,generalized_reid_ltcc_raw,Generalized Swin on LTCC (raw),model_epoch_039_step_116118,39,116118,24.5,61.5,74.0,79.9,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+LTCC,generalized_reid_ltcc_raw,Generalized Swin on LTCC (raw),model_epoch_049_step_145132,49,145132,25.4,62.7,75.9,80.5,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+LTCC,generalized_reid_ltcc_raw,Generalized Swin on LTCC (raw),model_epoch_059_step_174216,59,174216,26.3,63.5,75.5,80.7,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+LTCC,generalized_reid_ltcc_raw,Generalized Swin on LTCC (raw),model_epoch_069_step_203291,69,203291,27.1,63.9,75.7,80.7,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+LTCC,generalized_reid_ltcc_raw,Generalized Swin on LTCC (raw),model_epoch_079_step_232299,79,232299,27.4,63.1,74.6,80.7,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+LTCC,generalized_reid_ltcc_raw,Generalized Swin on LTCC (raw),model_epoch_089_step_261419,89,261419,28.3,63.3,76.3,80.7,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+LTCC,generalized_reid_ltcc_raw,Generalized Swin on LTCC (raw),model_epoch_099_step_290419,99,290419,28.8,63.3,76.3,80.5,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+LTCC,generalized_reid_ltcc_raw,Generalized Swin on LTCC (raw),model_epoch_109_step_319465,109,319465,29.2,64.3,76.7,80.9,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+LTCC,generalized_reid_ltcc_raw,Generalized Swin on LTCC (raw),model_epoch_119_step_348594,119,348594,29.5,64.7,75.9,80.5,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+PRCC,generalized_reid_prcc_raw,Generalized Swin on PRCC (raw),model_epoch_009_step_29073,9,29073,62.5,90.1,94.4,95.8,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+PRCC,generalized_reid_prcc_raw,Generalized Swin on PRCC (raw),model_epoch_019_step_58078,19,58078,66.1,94.4,95.8,95.8,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+PRCC,generalized_reid_prcc_raw,Generalized Swin on PRCC (raw),model_epoch_029_step_87117,29,87117,67.6,95.8,97.2,100.0,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+PRCC,generalized_reid_prcc_raw,Generalized Swin on PRCC (raw),model_epoch_039_step_116118,39,116118,68.5,97.2,100.0,100.0,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+PRCC,generalized_reid_prcc_raw,Generalized Swin on PRCC (raw),model_epoch_049_step_145132,49,145132,69.7,98.6,100.0,100.0,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+PRCC,generalized_reid_prcc_raw,Generalized Swin on PRCC (raw),model_epoch_059_step_174216,59,174216,70.3,98.6,100.0,100.0,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+PRCC,generalized_reid_prcc_raw,Generalized Swin on PRCC (raw),model_epoch_069_step_203291,69,203291,70.5,98.6,100.0,100.0,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+PRCC,generalized_reid_prcc_raw,Generalized Swin on PRCC (raw),model_epoch_079_step_232299,79,232299,70.6,98.6,100.0,100.0,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+PRCC,generalized_reid_prcc_raw,Generalized Swin on PRCC (raw),model_epoch_089_step_261419,89,261419,71.0,98.6,100.0,100.0,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+PRCC,generalized_reid_prcc_raw,Generalized Swin on PRCC (raw),model_epoch_099_step_290419,99,290419,71.4,98.6,100.0,100.0,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+PRCC,generalized_reid_prcc_raw,Generalized Swin on PRCC (raw),model_epoch_109_step_319465,109,319465,71.4,98.6,100.0,100.0,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+PRCC,generalized_reid_prcc_raw,Generalized Swin on PRCC (raw),model_epoch_119_step_348594,119,348594,71.5,98.6,100.0,100.0,passed,experiments/reid/generalized_reid_swin/evaluate/all_checkpoints/summary.tsv
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_001,1,,2.9,6.9,17.2,27.0,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_002,2,,2.9,7.7,17.2,24.9,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_003,3,,4.2,9.3,24.5,35.3,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_004,4,,10.5,22.5,42.0,51.1,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_005,5,,16.3,34.9,55.6,63.1,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_006,6,,22.3,45.8,62.1,71.8,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_007,7,,25.5,52.3,67.7,73.6,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_008,8,,28.7,55.6,73.4,78.9,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_009,9,,31.2,61.5,73.8,79.9,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_010,10,,33.4,63.1,77.9,82.6,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_011,11,,30.9,58.4,75.5,81.9,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_012,12,,34.3,64.5,78.9,84.6,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_013,13,,35.5,68.6,80.3,85.4,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_014,14,,34.9,65.7,79.5,85.0,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_015,15,,35.6,66.5,79.7,83.6,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_016,16,,36.6,70.4,80.1,84.8,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_017,17,,36.5,69.6,78.9,83.8,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_018,18,,36.5,71.8,80.9,85.0,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_019,19,,35.9,70.0,80.1,85.8,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_020,20,,36.8,71.4,81.3,86.4,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_021,21,,36.4,70.0,80.1,86.6,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_022,22,,36.9,70.8,81.1,83.8,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_023,23,,37.2,70.4,80.5,84.8,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_024,24,,37.6,72.2,81.5,84.0,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_025,25,,37.3,71.6,82.6,85.6,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_026,26,,37.0,70.6,79.9,85.0,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_027,27,,37.1,71.4,81.1,85.0,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_028,28,,37.1,70.2,81.1,84.8,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_029,29,,36.7,71.6,80.7,85.2,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_030,30,,37.1,69.6,79.3,83.6,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_031,31,,36.0,71.0,80.7,85.0,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_032,32,,36.5,71.4,80.9,85.4,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_033,33,,36.2,70.6,79.7,84.2,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.0,LTCC archived v1.0.0 curve,archived_epoch_034,34,,36.7,72.2,81.1,84.8,passed,experiments/reid/ltcc/archives/v1.0.0_20251120_083952/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_001,1,,8.7,30.6,51.1,61.3,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_002,2,,19.1,49.5,66.7,73.2,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_003,3,,28.7,62.3,74.4,80.3,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_004,4,,35.1,66.5,76.3,82.4,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_005,5,,36.6,68.4,79.1,84.4,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_006,6,,37.9,70.2,80.5,84.2,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_007,7,,39.7,72.2,82.2,84.4,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_008,8,,39.7,72.4,80.5,84.2,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_009,9,,40.5,71.8,82.6,85.6,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_010,10,,39.7,73.2,80.9,85.0,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_011,11,,40.6,73.0,82.8,85.6,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_012,12,,40.6,74.0,82.4,85.6,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_013,13,,40.6,74.8,82.6,85.4,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_014,14,,40.2,73.6,81.5,85.4,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_015,15,,39.9,72.6,82.2,84.4,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_016,16,,40.2,73.0,81.5,85.0,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_017,17,,39.3,71.8,82.2,85.2,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_018,18,,40.6,72.8,82.4,84.8,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_019,19,,39.5,72.0,81.1,84.2,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_020,20,,40.5,73.2,81.5,84.2,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_021,21,,40.2,72.8,82.8,85.6,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_022,22,,38.4,71.8,80.1,84.2,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_archive_v1.0.1,LTCC archived v1.0.1 curve,archived_epoch_023,23,,39.3,71.4,80.9,85.0,passed,experiments/reid/ltcc/archives/v1.0.1_20251120_104004/results/metrics.json
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_004_step_02319,4,2319,39.0,69.6,78.9,81.9,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_009_step_04640,9,4640,41.1,72.4,78.9,81.1,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_014_step_06957,14,6957,42.0,73.0,79.5,81.3,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_019_step_09273,19,9273,42.7,73.0,79.7,84.0,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_024_step_11586,24,11586,42.5,74.6,82.8,83.8,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_029_step_13913,29,13913,42.7,74.8,81.1,82.6,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_034_step_16224,34,16224,42.7,74.8,82.2,84.2,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_039_step_18560,39,18560,42.7,74.6,80.7,83.6,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_044_step_20872,44,20872,43.8,76.1,81.7,84.2,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_049_step_23182,49,23182,42.7,73.2,80.3,84.0,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_054_step_25510,54,25510,42.8,75.9,81.9,85.2,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_059_step_27831,59,27831,42.2,74.0,81.1,84.0,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_064_step_30149,64,30149,41.7,75.5,81.5,84.2,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_069_step_32460,69,32460,41.8,74.2,80.7,83.8,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_074_step_34775,74,34775,42.1,75.1,81.3,83.6,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_079_step_37090,79,37090,42.0,74.4,82.8,85.0,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_084_step_39405,84,39405,42.3,75.1,81.9,85.0,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_089_step_41729,89,41729,42.1,73.4,81.5,84.2,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_094_step_44044,94,44044,40.9,74.0,82.6,83.6,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_099_step_46361,99,46361,42.2,73.6,81.9,84.6,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_104_step_48676,104,48676,40.9,72.6,82.2,84.4,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_109_step_50996,109,50996,41.5,73.8,80.7,84.0,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_114_step_53313,114,53313,42.3,73.2,83.0,85.4,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_119_step_55633,119,55633,40.9,73.4,81.1,83.6,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_124_step_57949,124,57949,41.5,74.6,82.4,85.2,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_129_step_60271,129,60271,41.4,73.6,80.9,83.6,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_134_step_62591,134,62591,41.6,74.6,83.2,84.4,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_139_step_64896,139,64896,41.8,74.2,82.6,84.6,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_144_step_67216,144,67216,41.5,73.0,81.5,83.8,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_filtered_synthetic_3_variants,LTCC + filtered synthetic Swin,model_epoch_149_step_69529,149,69529,41.4,73.6,81.1,83.6,passed,experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/summary.tsv
+LTCC,ltcc_pretrained_reference,LTCC pretrained reference,pretrained_reference,,,5.6,17.0,31.6,39.2,passed,experiments/reid/ltcc/pretrained_results.txt
+LTCC,ltcc_resnet_0.1.1,LTCC ResNet 0.1.1,model_epoch_004_step_00670,4,670,2.4,4.7,15.0,19.7,passed,experiments/reid/ltcc/evaluation_results_0.1.1/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.1,LTCC ResNet 0.1.1,model_epoch_009_step_01337,9,1337,2.5,3.9,12.6,18.7,passed,experiments/reid/ltcc/evaluation_results_0.1.1/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.1,LTCC ResNet 0.1.1,model_epoch_014_step_02004,14,2004,2.5,3.7000000000000006,11.6,18.7,passed,experiments/reid/ltcc/evaluation_results_0.1.1/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.1,LTCC ResNet 0.1.1,model_epoch_019_step_02669,19,2669,2.5,3.4000000000000004,12.4,18.7,passed,experiments/reid/ltcc/evaluation_results_0.1.1/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.1,LTCC ResNet 0.1.1,model_epoch_024_step_03333,24,3333,2.4,5.3,14.2,18.7,passed,experiments/reid/ltcc/evaluation_results_0.1.1/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.1,LTCC ResNet 0.1.1,model_epoch_029_step_03998,29,3998,2.5,3.9,11.6,17.6,passed,experiments/reid/ltcc/evaluation_results_0.1.1/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.1,LTCC ResNet 0.1.1,model_epoch_034_step_04649,34,4649,2.4,3.7000000000000006,11.0,17.8,passed,experiments/reid/ltcc/evaluation_results_0.1.1/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.1,LTCC ResNet 0.1.1,model_epoch_039_step_05309,39,5309,2.5,5.1,15.8,21.1,passed,experiments/reid/ltcc/evaluation_results_0.1.1/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.1,LTCC ResNet 0.1.1,model_epoch_044_step_05971,44,5971,2.5,4.7,12.6,17.4,passed,experiments/reid/ltcc/evaluation_results_0.1.1/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.1,LTCC ResNet 0.1.1,model_epoch_049_step_06635,49,6635,2.4,3.9,11.0,18.5,passed,experiments/reid/ltcc/evaluation_results_0.1.1/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.1,LTCC ResNet 0.1.1,model_epoch_054_step_07293,54,7293,2.4,2.4,9.9,16.2,passed,experiments/reid/ltcc/evaluation_results_0.1.1/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.1,LTCC ResNet 0.1.1,model_epoch_059_step_07955,59,7955,2.5,4.3,13.4,18.5,passed,experiments/reid/ltcc/evaluation_results_0.1.1/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.2,LTCC ResNet 0.1.2,model_epoch_012_step_01700,12,1700,2.6,4.3,12.0,18.5,passed,experiments/reid/ltcc/evaluation_results_0.1.2/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.2,LTCC ResNet 0.1.2,model_epoch_014_step_02016,14,2016,2.5,2.6,10.8,19.3,passed,experiments/reid/ltcc/evaluation_results_0.1.2/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.2,LTCC ResNet 0.1.2,model_epoch_019_step_02682,19,2682,2.5,4.1,12.6,17.6,passed,experiments/reid/ltcc/evaluation_results_0.1.2/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.2,LTCC ResNet 0.1.2,model_epoch_024_step_03347,24,3347,2.5,3.2,13.600000000000001,20.9,passed,experiments/reid/ltcc/evaluation_results_0.1.2/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.2,LTCC ResNet 0.1.2,model_epoch_029_step_04011,29,4011,2.4,2.8,11.0,15.8,passed,experiments/reid/ltcc/evaluation_results_0.1.2/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.2,LTCC ResNet 0.1.2,model_epoch_034_step_04679,34,4679,2.4,3.9,11.4,17.2,passed,experiments/reid/ltcc/evaluation_results_0.1.2/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.2,LTCC ResNet 0.1.2,model_epoch_039_step_05344,39,5344,2.4,4.1,12.8,19.5,passed,experiments/reid/ltcc/evaluation_results_0.1.2/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.2,LTCC ResNet 0.1.2,model_epoch_044_step_06010,44,6010,2.4,3.4000000000000004,13.200000000000001,17.8,passed,experiments/reid/ltcc/evaluation_results_0.1.2/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.2,LTCC ResNet 0.1.2,model_epoch_049_step_06671,49,6671,2.3,2.8,9.9,16.2,passed,experiments/reid/ltcc/evaluation_results_0.1.2/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.2,LTCC ResNet 0.1.2,model_epoch_054_step_07344,54,7344,2.3,2.6,11.6,18.7,passed,experiments/reid/ltcc/evaluation_results_0.1.2/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.2,LTCC ResNet 0.1.2,model_epoch_059_step_08010,59,8010,2.4,4.1,12.2,19.7,passed,experiments/reid/ltcc/evaluation_results_0.1.2/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.3,LTCC ResNet 0.1.3,model_epoch_009_step_02725,9,2725,13.600000000000001,27.800000000000004,42.0,48.7,passed,experiments/reid/ltcc/evaluation_results_0.1.3/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.3,LTCC ResNet 0.1.3,model_epoch_019_step_05426,19,5426,16.6,34.1,51.9,59.4,passed,experiments/reid/ltcc/evaluation_results_0.1.3/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.3,LTCC ResNet 0.1.3,model_epoch_029_step_08129,29,8129,19.5,40.2,54.400000000000006,61.5,passed,experiments/reid/ltcc/evaluation_results_0.1.3/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.3,LTCC ResNet 0.1.3,model_epoch_039_step_10831,39,10831,21.1,45.4,60.4,66.7,passed,experiments/reid/ltcc/evaluation_results_0.1.3/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.3,LTCC ResNet 0.1.3,model_epoch_049_step_13553,49,13553,17.5,37.3,56.00000000000001,63.7,passed,experiments/reid/ltcc/evaluation_results_0.1.3/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.3,LTCC ResNet 0.1.3,model_epoch_059_step_16256,59,16256,17.5,40.6,55.39999999999999,61.5,passed,experiments/reid/ltcc/evaluation_results_0.1.3/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.4,LTCC ResNet 0.1.4,model_epoch_009_step_05458,9,5458,15.0,33.9,49.1,54.6,passed,experiments/reid/ltcc/evaluation_results_0.1.4/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.4,LTCC ResNet 0.1.4,model_epoch_019_step_10929,19,10929,18.2,39.4,55.2,61.9,passed,experiments/reid/ltcc/evaluation_results_0.1.4/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.4,LTCC ResNet 0.1.4,model_epoch_029_step_16399,29,16399,22.2,46.7,60.199999999999996,66.9,passed,experiments/reid/ltcc/evaluation_results_0.1.4/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.4,LTCC ResNet 0.1.4,model_epoch_039_step_21863,39,21863,21.5,46.7,62.5,66.7,passed,experiments/reid/ltcc/evaluation_results_0.1.4/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.4,LTCC ResNet 0.1.4,model_epoch_049_step_27337,49,27337,21.0,45.6,58.8,66.5,passed,experiments/reid/ltcc/evaluation_results_0.1.4/evaluation_summary.json
+LTCC,ltcc_resnet_0.1.4,LTCC ResNet 0.1.4,model_epoch_059_step_32791,59,32791,23.6,46.7,61.9,69.2,passed,experiments/reid/ltcc/evaluation_results_0.1.4/evaluation_summary.json
+LTCC,ltcc_resnet_synthetic_transfer,LTCC synthetic transfer ResNet,model_epoch_004_step_00185,4,185,2.8,5.5,15.0,23.5,passed,experiments/reid/ltcc+syntetic/evaluation_results_transfer/summary.tsv
+LTCC,ltcc_resnet_synthetic_transfer,LTCC synthetic transfer ResNet,model_epoch_009_step_00370,9,370,2.7,5.7,16.0,23.5,passed,experiments/reid/ltcc+syntetic/evaluation_results_transfer/summary.tsv
+LTCC,ltcc_resnet_synthetic_transfer,LTCC synthetic transfer ResNet,model_epoch_014_step_00555,14,555,2.7,5.7,15.8,23.3,passed,experiments/reid/ltcc+syntetic/evaluation_results_transfer/summary.tsv
+LTCC,ltcc_resnet_synthetic_transfer,LTCC synthetic transfer ResNet,model_epoch_019_step_00740,19,740,2.6,4.9,16.2,24.5,passed,experiments/reid/ltcc+syntetic/evaluation_results_transfer/summary.tsv
+LTCC,ltcc_sweep_smoke,LTCC percentage sweep smoke,model_epoch_001_step_02621,1,2621,5.8,12.0,21.7,29.8,passed,experiments/reid/repository_training_results/additional_validation/summary_worker1.tsv
+LTCC,ltcc_swin_1.0.1,LTCC Swin 1.0.1,model_epoch_009_step_05451,9,5451,4.0,9.7,23.7,30.8,passed,experiments/reid/ltcc/evaluation_results_1.0.1/evaluation_summary.json
+LTCC,ltcc_swin_1.0.1,LTCC Swin 1.0.1,model_epoch_019_step_10945,19,10945,7.5,16.8,36.1,44.6,passed,experiments/reid/ltcc/evaluation_results_1.0.1/evaluation_summary.json
+LTCC,ltcc_swin_1.0.1,LTCC Swin 1.0.1,model_epoch_029_step_16429,29,16429,10.2,25.8,42.4,51.5,passed,experiments/reid/ltcc/evaluation_results_1.0.1/evaluation_summary.json
+LTCC,ltcc_swin_1.0.1,LTCC Swin 1.0.1,model_epoch_039_step_21917,39,21917,10.7,29.799999999999997,49.5,57.4,passed,experiments/reid/ltcc/evaluation_results_1.0.1/evaluation_summary.json
+LTCC,ltcc_swin_1.0.1,LTCC Swin 1.0.1,model_epoch_049_step_27391,49,27391,12.4,32.9,52.5,61.5,passed,experiments/reid/ltcc/evaluation_results_1.0.1/evaluation_summary.json
+LTCC,ltcc_swin_1.0.1,LTCC Swin 1.0.1,model_epoch_059_step_32862,59,32862,13.0,32.9,53.29999999999999,59.0,passed,experiments/reid/ltcc/evaluation_results_1.0.1/evaluation_summary.json
+LTCC,ltcc_swin_1.0.1,LTCC Swin 1.0.1,model_epoch_069_step_38346,69,38346,17.9,39.4,52.7,61.9,passed,experiments/reid/repository_training_results/additional_validation/summary_worker1.tsv
+LTCC,ltcc_swin_1.0.1,LTCC Swin 1.0.1,model_epoch_079_step_43832,79,43832,17.1,38.5,54.8,61.3,passed,experiments/reid/repository_training_results/additional_validation/summary_worker0.tsv
+LTCC,ltcc_swin_1.0.1,LTCC Swin 1.0.1,model_epoch_089_step_49312,89,49312,15.0,33.3,49.7,56.0,passed,experiments/reid/repository_training_results/additional_validation/summary_worker1.tsv
+LTCC,ltcc_swin_1.0.1,LTCC Swin 1.0.1,model_epoch_099_step_54790,99,54790,17.2,39.1,56.0,62.3,passed,experiments/reid/repository_training_results/additional_validation/summary_worker0.tsv
+LTCC,ltcc_swin_1.0.1,LTCC Swin 1.0.1,model_epoch_109_step_60244,109,60244,17.5,40.6,55.6,62.3,passed,experiments/reid/repository_training_results/additional_validation/summary_worker1.tsv
+LTCC,ltcc_swin_1.0.1,LTCC Swin 1.0.1,model_epoch_119_step_65706,119,65706,17.4,41.6,55.8,63.3,passed,experiments/reid/repository_training_results/additional_validation/summary_worker0.tsv
+LTCC,ltcc_swin_1.0.1,LTCC Swin 1.0.1,model_epoch_129_step_71182,129,71182,16.3,40.0,51.9,59.0,passed,experiments/reid/repository_training_results/additional_validation/summary_worker1.tsv
+LTCC,ltcc_swin_1.0.1,LTCC Swin 1.0.1,model_epoch_139_step_76660,139,76660,17.2,40.2,51.3,58.0,passed,experiments/reid/repository_training_results/additional_validation/summary_worker0.tsv
+LTCC,ltcc_swin_1.0.1,LTCC Swin 1.0.1,model_epoch_149_step_82107,149,82107,15.8,38.1,52.1,59.4,passed,experiments/reid/repository_training_results/additional_validation/summary_worker1.tsv
+LTCC,ltcc_swin_misfiled_0.1.4_epoch0,LTCC Swin misfiled 0.1.4 epoch 0,model_epoch_000_step_00000,0,0,7.1,20.7,33.7,41.2,passed,experiments/reid/repository_training_results/additional_validation/summary_worker0.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_004_step_02726,4,2726,2.3,3.9,10.3,15.8,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_009_step_05471,9,5471,7.8,19.1,30.4,37.7,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_014_step_08207,14,8207,13.3,29.4,43.2,50.9,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_019_step_10946,19,10946,18.6,40.0,51.7,57.8,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_024_step_13676,24,13676,18.4,41.0,52.3,57.2,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_029_step_16414,29,16414,19.6,43.0,55.0,60.0,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_034_step_19168,34,19168,21.8,47.7,59.6,64.9,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_039_step_21904,39,21904,21.8,46.9,57.4,64.5,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_044_step_24628,44,24628,21.4,47.9,56.8,62.3,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_049_step_27345,49,27345,23.2,47.3,58.8,62.5,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_054_step_30084,54,30084,22.0,46.9,58.0,64.5,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_059_step_32828,59,32828,22.5,48.9,59.8,64.5,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_064_step_35561,64,35561,22.0,48.3,60.4,63.7,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_069_step_38310,69,38310,22.5,48.9,59.4,63.7,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_074_step_41047,74,41047,22.3,47.5,59.2,63.5,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_079_step_43795,79,43795,22.7,47.3,58.6,62.3,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_084_step_46536,84,46536,21.6,45.0,57.6,63.5,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_089_step_49273,89,49273,22.2,49.7,59.2,65.1,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_094_step_52016,94,52016,22.6,49.3,61.3,66.7,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_099_step_54742,99,54742,23.8,50.3,62.3,67.5,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_104_step_57474,104,57474,21.8,46.9,60.4,66.3,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_109_step_60191,109,60191,22.2,48.3,62.1,66.7,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_114_step_62943,114,62943,22.1,47.1,59.2,63.5,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_119_step_65692,119,65692,21.7,49.3,59.4,64.9,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_124_step_68411,124,68411,22.5,51.1,61.5,66.1,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_129_step_71138,129,71138,22.3,50.3,59.6,64.9,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_134_step_73874,134,73874,22.6,49.1,61.3,65.9,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_139_step_76613,139,76613,22.1,49.1,61.1,65.3,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_144_step_79336,144,79336,22.0,48.9,61.3,63.9,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_plain,LTCC Swin plain,model_epoch_149_step_82067,149,82067,21.7,48.7,59.0,64.3,passed,experiments/reid/ltcc/evaluation_results_swin_plain/summary.tsv
+LTCC,ltcc_swin_unfiltered_synthetic,LTCC + unfiltered synthetic Swin,model_epoch_000_step_00372,0,372,10.8,23.7,37.7,44.0,passed,experiments/reid/ltcc+syntetic/evaluation_results_swin_combined/summary.tsv
+LTCC,ltcc_swin_unfiltered_synthetic,LTCC + unfiltered synthetic Swin,model_epoch_004_step_03806,4,3806,40.1,71.4,78.9,81.1,passed,experiments/reid/ltcc+syntetic/evaluation_results_swin_combined/summary.tsv
+LTCC,ltcc_swin_unfiltered_synthetic,LTCC + unfiltered synthetic Swin,model_epoch_009_step_07623,9,7623,41.3,74.0,79.1,81.3,passed,experiments/reid/ltcc+syntetic/evaluation_results_swin_combined/summary.tsv
+LTCC,ltcc_swin_unfiltered_synthetic,LTCC + unfiltered synthetic Swin,model_epoch_014_step_11343,14,11343,42.1,74.4,80.3,83.0,passed,experiments/reid/ltcc+syntetic/evaluation_results_swin_combined/summary.tsv
+LTCC,ltcc_swin_unfiltered_synthetic,LTCC + unfiltered synthetic Swin,model_epoch_019_step_15053,19,15053,42.7,73.6,81.1,83.2,passed,experiments/reid/ltcc+syntetic/evaluation_results_swin_combined/summary.tsv
+LTCC,ltcc_swin_unfiltered_synthetic,LTCC + unfiltered synthetic Swin,model_epoch_024_step_18820,24,18820,43.1,74.4,81.7,84.6,passed,experiments/reid/ltcc+syntetic/evaluation_results_swin_combined/summary.tsv
+LTCC,ltcc_swin_unfiltered_synthetic,LTCC + unfiltered synthetic Swin,model_epoch_029_step_22557,29,22557,42.0,74.6,80.3,83.0,passed,experiments/reid/ltcc+syntetic/evaluation_results_swin_combined/summary.tsv
+LTCC,ltcc_swin_unfiltered_synthetic,LTCC + unfiltered synthetic Swin,model_epoch_034_step_26336,34,26336,42.3,75.7,81.1,83.2,passed,experiments/reid/ltcc+syntetic/evaluation_results_swin_combined/summary.tsv
+LTCC,ltcc_swin_unfiltered_synthetic,LTCC + unfiltered synthetic Swin,model_epoch_039_step_30103,39,30103,41.0,75.1,79.9,82.2,passed,experiments/reid/ltcc+syntetic/evaluation_results_swin_combined/summary.tsv
+LTCC,ltcc_swin_unfiltered_synthetic,LTCC + unfiltered synthetic Swin,model_epoch_044_step_33848,44,33848,42.6,75.3,80.5,82.8,passed,experiments/reid/ltcc+syntetic/evaluation_results_swin_combined/summary.tsv
+LTCC,ltcc_swin_unfiltered_synthetic,LTCC + unfiltered synthetic Swin,model_epoch_049_step_37558,49,37558,40.8,73.6,79.5,81.3,passed,experiments/reid/ltcc+syntetic/evaluation_results_swin_combined/summary.tsv
+LTCC,ltcc_swin_unfiltered_synthetic,LTCC + unfiltered synthetic Swin,model_epoch_054_step_41297,54,41297,40.4,73.4,79.9,81.9,passed,experiments/reid/ltcc+syntetic/evaluation_results_swin_combined/summary.tsv
+LTCC,ltcc_swin_unfiltered_synthetic,LTCC + unfiltered synthetic Swin,model_epoch_059_step_45062,59,45062,41.3,75.1,78.9,80.9,passed,experiments/reid/ltcc+syntetic/evaluation_results_swin_combined/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_004_step_09879,4,9879,38.5,70.8,77.7,79.7,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_009_step_19730,9,19730,39.7,72.4,77.5,79.7,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_014_step_29612,14,29612,39.6,70.6,77.7,80.3,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_019_step_39478,19,39478,,,,,failed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_024_step_49336,24,49336,40.2,73.2,78.9,81.1,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_029_step_59207,29,59207,40.7,72.6,80.3,82.4,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_034_step_69098,34,69098,40.5,73.2,79.1,81.9,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_039_step_78942,39,78942,39.6,72.8,79.9,82.8,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_044_step_88790,44,88790,39.5,72.6,79.3,81.1,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_049_step_98636,49,98636,38.4,70.2,77.9,81.7,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_054_step_108508,54,108508,40.5,72.8,79.3,82.2,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_059_step_118324,59,118324,38.9,72.0,77.1,80.9,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_064_step_128213,64,128213,39.0,71.8,78.9,80.9,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_069_step_138039,69,138039,38.8,72.4,79.1,81.9,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_074_step_147920,74,147920,38.7,72.2,79.7,82.6,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_079_step_157768,79,157768,37.1,70.2,78.3,81.3,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_084_step_167599,84,167599,37.6,71.6,80.1,82.2,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_089_step_177469,89,177469,37.3,71.8,79.1,81.9,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_094_step_187354,94,187354,36.8,69.2,75.7,78.7,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_099_step_197194,99,197194,37.1,71.6,77.5,80.7,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_104_step_207090,104,207090,37.0,70.0,77.9,81.5,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_109_step_216983,109,216983,35.0,68.0,78.7,80.7,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_114_step_226838,114,226838,36.8,69.8,76.9,81.3,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_119_step_236720,119,236720,35.0,67.3,75.7,79.3,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_124_step_246598,124,246598,35.4,69.0,75.5,78.3,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_129_step_256450,129,256450,33.8,64.3,74.6,78.7,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_134_step_266302,134,266302,35.1,67.7,75.9,80.5,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_139_step_276159,139,276159,34.0,66.7,75.5,77.5,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_144_step_286037,144,286037,34.5,67.3,75.7,78.3,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_10,LTCC + 10% synthetic Swin,model_epoch_149_step_295897,149,295897,33.1,65.1,72.8,77.3,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_25,LTCC + 25% synthetic Swin,model_epoch_004_step_20234,4,20234,31.1,62.7,71.4,76.5,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_25,LTCC + 25% synthetic Swin,model_epoch_009_step_40440,9,40440,34.9,66.7,74.4,78.9,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_004_step_37518,4,37518,15.3,35.5,46.0,51.3,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_009_step_74889,9,74889,24.2,52.3,63.9,68.0,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_014_step_112349,14,112349,27.1,56.0,67.1,72.2,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_019_step_149773,19,149773,27.0,57.0,67.1,71.0,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_024_step_187175,24,187175,27.0,56.0,67.3,72.6,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_029_step_224523,29,224523,25.8,55.6,64.5,70.2,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_034_step_262083,34,262083,24.5,48.9,62.7,67.5,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_039_step_299555,39,299555,25.3,52.9,65.9,70.2,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_044_step_336978,44,336978,25.0,52.9,68.2,71.6,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_049_step_374323,49,374323,22.7,48.9,62.3,67.1,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_054_step_411865,54,411865,22.1,49.5,62.1,65.5,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_059_step_449245,59,449245,25.1,53.3,66.5,70.8,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_064_step_486751,64,486751,22.2,46.9,60.6,66.7,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_069_step_524265,69,524265,24.8,52.3,63.3,69.4,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_074_step_561684,74,561684,23.1,50.1,63.9,67.5,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_079_step_599146,79,599146,22.8,48.9,60.9,67.3,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_084_step_636649,84,636649,23.0,50.3,63.1,68.2,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_089_step_673942,89,673942,23.8,51.7,64.9,69.0,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_094_step_711395,94,711395,22.7,50.9,63.7,67.7,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,ltcc_syntetic_50,LTCC + 50% synthetic Swin,model_epoch_099_step_748797,99,748797,21.3,48.1,60.6,66.7,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+PRCC,prcc_filtered_syntetic_swin,PRCC + filtered synthetic Swin,model_epoch_009_step_05879,9,5879,68.3,93.0,97.2,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_filtered_syntetic_swin,PRCC + filtered synthetic Swin,model_epoch_019_step_11750,19,11750,68.9,97.2,97.2,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_filtered_syntetic_swin,PRCC + filtered synthetic Swin,model_epoch_029_step_17622,29,17622,69.5,95.8,97.2,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_filtered_syntetic_swin,PRCC + filtered synthetic Swin,model_epoch_039_step_23497,39,23497,70.1,95.8,98.6,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_filtered_syntetic_swin,PRCC + filtered synthetic Swin,model_epoch_049_step_29370,49,29370,70.8,97.2,97.2,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_filtered_syntetic_swin,PRCC + filtered synthetic Swin,model_epoch_059_step_35244,59,35244,71.0,97.2,98.6,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_filtered_syntetic_swin,PRCC + filtered synthetic Swin,model_epoch_069_step_41121,69,41121,71.5,97.2,98.6,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_filtered_syntetic_swin,PRCC + filtered synthetic Swin,model_epoch_079_step_46998,79,46998,71.8,98.6,98.6,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_filtered_syntetic_swin,PRCC + filtered synthetic Swin,model_epoch_089_step_52875,89,52875,71.8,98.6,98.6,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_filtered_syntetic_swin,PRCC + filtered synthetic Swin,model_epoch_099_step_58750,99,58750,72.4,98.6,98.6,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_filtered_syntetic_swin,PRCC + filtered synthetic Swin,model_epoch_109_step_64626,109,64626,72.4,98.6,98.6,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_filtered_syntetic_swin,PRCC + filtered synthetic Swin,model_epoch_119_step_70499,119,70499,72.4,98.6,98.6,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_plain_swin,PRCC plain Swin,model_epoch_009_step_04675,9,4675,69.0,97.2,97.2,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_plain_swin,PRCC plain Swin,model_epoch_019_step_09349,19,9349,69.7,97.2,97.2,97.2,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_plain_swin,PRCC plain Swin,model_epoch_029_step_14023,29,14023,70.1,97.2,97.2,97.2,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_plain_swin,PRCC plain Swin,model_epoch_039_step_18698,39,18698,70.5,97.2,97.2,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_plain_swin,PRCC plain Swin,model_epoch_049_step_23371,49,23371,71.0,97.2,98.6,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_plain_swin,PRCC plain Swin,model_epoch_059_step_28045,59,28045,71.3,97.2,98.6,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_plain_swin,PRCC plain Swin,model_epoch_069_step_32723,69,32723,71.6,98.6,98.6,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_plain_swin,PRCC plain Swin,model_epoch_079_step_37401,79,37401,71.9,98.6,98.6,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_plain_swin,PRCC plain Swin,model_epoch_089_step_42071,89,42071,71.8,97.2,98.6,98.6,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_plain_swin,PRCC plain Swin,model_epoch_099_step_46746,99,46746,72.1,98.6,98.6,100.0,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_plain_swin,PRCC plain Swin,model_epoch_109_step_51415,109,51415,71.8,98.6,98.6,100.0,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_plain_swin,PRCC plain Swin,model_epoch_119_step_56093,119,56093,71.8,98.6,98.6,100.0,passed,experiments/reid/prcc_syntetic_filtered_seq/evaluate/prcc_real_split/summary_reverse.tsv
+PRCC,prcc_pretrained_reference,PRCC pretrained reference,pretrained_reference,,,12.5,22.5,25.4,33.8,passed,experiments/reid/prcc/pretrained_results.txt
+PRCC,prcc_resnet_0.0.1,PRCC ResNet 0.0.1,model_epoch_009_step_14179,9,14179,47.2,62.0,78.9,81.7,passed,experiments/reid/prcc/evaluation_results_0.0.1/evaluation_summary.json
+PRCC,prcc_resnet_0.0.1,PRCC ResNet 0.0.1,model_epoch_019_step_28379,19,28379,55.7,77.5,81.7,85.9,passed,experiments/reid/prcc/evaluation_results_0.0.1/evaluation_summary.json
+PRCC,prcc_resnet_0.0.1,PRCC ResNet 0.0.1,model_epoch_029_step_42546,29,42546,59.4,83.1,88.7,90.1,passed,experiments/reid/prcc/evaluation_results_0.0.1/evaluation_summary.json
+PRCC,prcc_resnet_0.0.1,PRCC ResNet 0.0.1,model_epoch_039_step_56739,39,56739,61.199999999999996,81.7,90.1,94.4,passed,experiments/reid/prcc/evaluation_results_0.0.1/evaluation_summary.json
+PRCC,prcc_resnet_0.0.1,PRCC ResNet 0.0.1,model_epoch_049_step_70907,49,70907,59.4,77.5,84.5,88.7,passed,experiments/reid/prcc/evaluation_results_0.0.1/evaluation_summary.json
+PRCC,prcc_resnet_0.0.1,PRCC ResNet 0.0.1,model_epoch_059_step_85107,59,85107,61.7,77.5,90.1,91.5,passed,experiments/reid/prcc/evaluation_results_0.0.1/evaluation_summary.json
+CCVID,pretrained_swin_ccvid_raw,Pretrained Swin on CCVID (raw),pretrained_swin_market1501_aicity156,,,,,,,failed,experiments/reid/pretrained_cross_dataset/evaluate/all_targets_raw/summary.tsv
+Duke,pretrained_swin_duke_raw,Pretrained Swin on Duke (raw),pretrained_swin_market1501_aicity156,,,4.4,11.3,18.9,22.9,passed,experiments/reid/pretrained_cross_dataset/evaluate/all_targets_raw/summary.tsv
+LTCC,pretrained_swin_ltcc_raw,Pretrained Swin on LTCC (raw),pretrained_swin_market1501_aicity156,,,5.4,19.7,34.7,43.4,passed,experiments/reid/pretrained_cross_dataset/evaluate/all_targets_raw/summary.tsv
+LTCC,pretrained_swin_market1501_aicity156,Pretrained Swin marker,swin_base_market1501_aicity156_featuredim1024,,,7.5,23.1,35.7,42.6,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+PRCC,pretrained_swin_prcc_raw,Pretrained Swin on PRCC (raw),pretrained_swin_market1501_aicity156,,,18.7,29.6,39.4,39.4,passed,experiments/reid/pretrained_cross_dataset/evaluate/all_targets_raw/summary.tsv
+Synthetic Market1501,pretrained_swin_synthetic_market1501_raw,Pretrained Swin on synthetic Market1501 (raw),pretrained_swin_market1501_aicity156,,,80.5,100.0,100.0,100.0,passed,experiments/reid/pretrained_cross_dataset/evaluate/all_targets_raw/summary.tsv
+ULIRI,pretrained_swin_uliri_raw,Pretrained Swin on ULIRI (raw),pretrained_swin_market1501_aicity156,,,12.4,75.7,87.8,91.7,passed,experiments/reid/pretrained_cross_dataset/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_100,Synthetic-only Swin evaluated on LTCC,model_epoch_004_step_22005,4,22005,6.4,15.6,26.2,31.2,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,syntetic_only_100,Synthetic-only Swin evaluated on LTCC,model_epoch_009_step_44054,9,44054,4.7,11.6,21.9,28.4,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+LTCC,syntetic_only_100,Synthetic-only Swin evaluated on LTCC,model_epoch_014_step_66096,14,66096,4.1,10.8,21.7,26.8,passed,experiments/reid/ltcc_syntetic_sweep/evaluation_full_gpu1/summary.tsv
+Duke,syntetic_only_filtered_100k_duke_raw,Synthetic-only filtered 100k on Duke (raw),model_epoch_009_step_18171,9,18171,25.7,36.8,53.0,60.1,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_100k_duke_raw,Synthetic-only filtered 100k on Duke (raw),model_epoch_019_step_36353,19,36353,24.2,34.5,52.3,59.8,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_100k_duke_raw,Synthetic-only filtered 100k on Duke (raw),model_epoch_029_step_54551,29,54551,23.6,34.3,52.1,59.5,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_100k_duke_raw,Synthetic-only filtered 100k on Duke (raw),model_epoch_039_step_72675,39,72675,22.8,33.3,50.3,57.4,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_100k_duke_raw,Synthetic-only filtered 100k on Duke (raw),model_epoch_049_step_90868,49,90868,22.1,31.9,49.3,56.3,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_100k_duke_raw,Synthetic-only filtered 100k on Duke (raw),model_epoch_059_step_109028,59,109028,21.1,30.5,47.6,55.6,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_100k_duke_raw,Synthetic-only filtered 100k on Duke (raw),model_epoch_069_step_127099,69,127099,20.9,30.2,46.9,55.1,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_100k_duke_raw,Synthetic-only filtered 100k on Duke (raw),model_epoch_079_step_145286,79,145286,20.6,30.1,46.4,54.7,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_100k_duke_raw,Synthetic-only filtered 100k on Duke (raw),model_epoch_089_step_163504,89,163504,20.6,30.9,47.2,54.3,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_100k_duke_raw,Synthetic-only filtered 100k on Duke (raw),model_epoch_099_step_181644,99,181644,20.2,29.8,47.4,54.6,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_100k_duke_raw,Synthetic-only filtered 100k on Duke (raw),model_epoch_109_step_199817,109,199817,19.7,28.6,46.0,53.4,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_100k_duke_raw,Synthetic-only filtered 100k on Duke (raw),model_epoch_119_step_217996,119,217996,19.6,28.5,46.3,53.3,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_100k_ltcc_raw,Synthetic-only filtered 100k on LTCC (raw),model_epoch_009_step_18171,9,18171,12.3,38.1,50.3,58.4,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_100k_ltcc_raw,Synthetic-only filtered 100k on LTCC (raw),model_epoch_019_step_36353,19,36353,11.0,33.7,49.3,55.6,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_100k_ltcc_raw,Synthetic-only filtered 100k on LTCC (raw),model_epoch_029_step_54551,29,54551,10.5,33.3,48.1,54.6,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_100k_ltcc_raw,Synthetic-only filtered 100k on LTCC (raw),model_epoch_039_step_72675,39,72675,10.2,31.6,47.5,53.5,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_100k_ltcc_raw,Synthetic-only filtered 100k on LTCC (raw),model_epoch_049_step_90868,49,90868,9.6,30.6,44.6,52.5,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_100k_ltcc_raw,Synthetic-only filtered 100k on LTCC (raw),model_epoch_059_step_109028,59,109028,9.3,28.0,43.6,51.5,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_100k_ltcc_raw,Synthetic-only filtered 100k on LTCC (raw),model_epoch_069_step_127099,69,127099,9.3,28.4,43.8,50.1,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_100k_ltcc_raw,Synthetic-only filtered 100k on LTCC (raw),model_epoch_079_step_145286,79,145286,9.1,27.8,41.6,50.5,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_100k_ltcc_raw,Synthetic-only filtered 100k on LTCC (raw),model_epoch_089_step_163504,89,163504,8.9,26.6,42.2,49.5,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_100k_ltcc_raw,Synthetic-only filtered 100k on LTCC (raw),model_epoch_099_step_181644,99,181644,8.7,25.2,41.4,49.7,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_100k_ltcc_raw,Synthetic-only filtered 100k on LTCC (raw),model_epoch_109_step_199817,109,199817,8.5,25.2,40.0,49.1,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_100k_ltcc_raw,Synthetic-only filtered 100k on LTCC (raw),model_epoch_119_step_217996,119,217996,8.4,25.6,40.0,49.1,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_100k_prcc_raw,Synthetic-only filtered 100k on PRCC (raw),model_epoch_009_step_18171,9,18171,28.5,36.6,42.3,43.7,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_100k_prcc_raw,Synthetic-only filtered 100k on PRCC (raw),model_epoch_019_step_36353,19,36353,29.8,39.4,45.1,49.3,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_100k_prcc_raw,Synthetic-only filtered 100k on PRCC (raw),model_epoch_029_step_54551,29,54551,30.3,39.4,45.1,49.3,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_100k_prcc_raw,Synthetic-only filtered 100k on PRCC (raw),model_epoch_039_step_72675,39,72675,30.1,40.8,47.9,49.3,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_100k_prcc_raw,Synthetic-only filtered 100k on PRCC (raw),model_epoch_049_step_90868,49,90868,29.5,40.8,47.9,49.3,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_100k_prcc_raw,Synthetic-only filtered 100k on PRCC (raw),model_epoch_059_step_109028,59,109028,27.7,40.8,45.1,47.9,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_100k_prcc_raw,Synthetic-only filtered 100k on PRCC (raw),model_epoch_069_step_127099,69,127099,28.1,40.8,46.5,46.5,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_100k_prcc_raw,Synthetic-only filtered 100k on PRCC (raw),model_epoch_079_step_145286,79,145286,27.1,38.0,45.1,46.5,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_100k_prcc_raw,Synthetic-only filtered 100k on PRCC (raw),model_epoch_089_step_163504,89,163504,27.9,39.4,46.5,46.5,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_100k_prcc_raw,Synthetic-only filtered 100k on PRCC (raw),model_epoch_099_step_181644,99,181644,27.4,38.0,46.5,46.5,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_100k_prcc_raw,Synthetic-only filtered 100k on PRCC (raw),model_epoch_109_step_199817,109,199817,26.2,33.8,42.3,46.5,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_100k_prcc_raw,Synthetic-only filtered 100k on PRCC (raw),model_epoch_119_step_217996,119,217996,26.4,32.4,45.1,46.5,passed,experiments/reid/syntetic_only_filtered_100k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_30k_duke_raw,Synthetic-only filtered 30k on Duke (raw),model_epoch_009_step_05501,9,5501,29.7,40.9,58.8,65.2,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_30k_duke_raw,Synthetic-only filtered 30k on Duke (raw),model_epoch_019_step_11006,19,11006,27.3,37.6,56.6,62.8,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_30k_duke_raw,Synthetic-only filtered 30k on Duke (raw),model_epoch_029_step_16495,29,16495,26.1,36.2,54.3,61.1,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_30k_duke_raw,Synthetic-only filtered 30k on Duke (raw),model_epoch_039_step_21976,39,21976,25.6,36.8,53.4,61.0,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_30k_duke_raw,Synthetic-only filtered 30k on Duke (raw),model_epoch_049_step_27414,49,27414,25.0,36.5,53.3,60.0,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_30k_duke_raw,Synthetic-only filtered 30k on Duke (raw),model_epoch_059_step_32887,59,32887,24.4,35.8,52.7,60.4,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_30k_duke_raw,Synthetic-only filtered 30k on Duke (raw),model_epoch_069_step_38378,69,38378,24.1,35.5,52.4,60.3,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_30k_duke_raw,Synthetic-only filtered 30k on Duke (raw),model_epoch_079_step_43857,79,43857,23.8,35.0,51.7,60.1,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_30k_duke_raw,Synthetic-only filtered 30k on Duke (raw),model_epoch_089_step_49333,89,49333,23.2,33.8,51.6,60.0,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_30k_duke_raw,Synthetic-only filtered 30k on Duke (raw),model_epoch_099_step_54772,99,54772,23.0,33.8,51.1,59.8,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_30k_duke_raw,Synthetic-only filtered 30k on Duke (raw),model_epoch_109_step_60250,109,60250,23.0,33.9,51.7,59.5,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+Duke,syntetic_only_filtered_30k_duke_raw,Synthetic-only filtered 30k on Duke (raw),model_epoch_119_step_65750,119,65750,22.4,33.3,51.3,58.7,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_30k_ltcc_raw,Synthetic-only filtered 30k on LTCC (raw),model_epoch_009_step_05501,9,5501,16.2,45.2,59.2,67.1,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_30k_ltcc_raw,Synthetic-only filtered 30k on LTCC (raw),model_epoch_019_step_11006,19,11006,14.4,41.0,54.6,63.3,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_30k_ltcc_raw,Synthetic-only filtered 30k on LTCC (raw),model_epoch_029_step_16495,29,16495,13.1,38.7,52.5,60.6,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_30k_ltcc_raw,Synthetic-only filtered 30k on LTCC (raw),model_epoch_039_step_21976,39,21976,12.3,37.7,52.3,59.8,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_30k_ltcc_raw,Synthetic-only filtered 30k on LTCC (raw),model_epoch_049_step_27414,49,27414,12.0,37.5,53.1,58.4,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_30k_ltcc_raw,Synthetic-only filtered 30k on LTCC (raw),model_epoch_059_step_32887,59,32887,11.7,36.1,52.1,57.6,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_30k_ltcc_raw,Synthetic-only filtered 30k on LTCC (raw),model_epoch_069_step_38378,69,38378,11.3,36.7,51.1,57.4,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_30k_ltcc_raw,Synthetic-only filtered 30k on LTCC (raw),model_epoch_079_step_43857,79,43857,11.1,36.1,49.3,56.4,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_30k_ltcc_raw,Synthetic-only filtered 30k on LTCC (raw),model_epoch_089_step_49333,89,49333,10.9,35.5,49.3,57.0,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_30k_ltcc_raw,Synthetic-only filtered 30k on LTCC (raw),model_epoch_099_step_54772,99,54772,10.4,33.5,46.9,55.0,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_30k_ltcc_raw,Synthetic-only filtered 30k on LTCC (raw),model_epoch_109_step_60250,109,60250,10.7,34.7,48.3,55.6,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+LTCC,syntetic_only_filtered_30k_ltcc_raw,Synthetic-only filtered 30k on LTCC (raw),model_epoch_119_step_65750,119,65750,10.3,32.5,47.5,55.4,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_30k_prcc_raw,Synthetic-only filtered 30k on PRCC (raw),model_epoch_009_step_05501,9,5501,37.7,47.9,53.5,56.3,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_30k_prcc_raw,Synthetic-only filtered 30k on PRCC (raw),model_epoch_019_step_11006,19,11006,31.6,39.4,46.5,49.3,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_30k_prcc_raw,Synthetic-only filtered 30k on PRCC (raw),model_epoch_029_step_16495,29,16495,31.1,40.8,49.3,53.5,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_30k_prcc_raw,Synthetic-only filtered 30k on PRCC (raw),model_epoch_039_step_21976,39,21976,31.4,45.1,49.3,49.3,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_30k_prcc_raw,Synthetic-only filtered 30k on PRCC (raw),model_epoch_049_step_27414,49,27414,31.5,46.5,49.3,50.7,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_30k_prcc_raw,Synthetic-only filtered 30k on PRCC (raw),model_epoch_059_step_32887,59,32887,31.4,43.7,50.7,50.7,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_30k_prcc_raw,Synthetic-only filtered 30k on PRCC (raw),model_epoch_069_step_38378,69,38378,31.4,46.5,52.1,53.5,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_30k_prcc_raw,Synthetic-only filtered 30k on PRCC (raw),model_epoch_079_step_43857,79,43857,31.5,47.9,50.7,53.5,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_30k_prcc_raw,Synthetic-only filtered 30k on PRCC (raw),model_epoch_089_step_49333,89,49333,30.9,46.5,50.7,53.5,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_30k_prcc_raw,Synthetic-only filtered 30k on PRCC (raw),model_epoch_099_step_54772,99,54772,30.2,43.7,50.7,52.1,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_30k_prcc_raw,Synthetic-only filtered 30k on PRCC (raw),model_epoch_109_step_60250,109,60250,31.1,46.5,52.1,52.1,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+PRCC,syntetic_only_filtered_30k_prcc_raw,Synthetic-only filtered 30k on PRCC (raw),model_epoch_119_step_65750,119,65750,30.6,45.1,52.1,52.1,passed,experiments/reid/syntetic_only_filtered_30k/evaluate/all_targets_raw/summary.tsv
+ULIRI,uliri_pretrained_reference,ULIRI pretrained reference,pretrained_reference,,,34.2,86.3,93.6,96.5,passed,experiments/reid/uliri/pretrained_results.txt
+ULIRI,uliri_resnet_0.0.1,ULIRI ResNet 0.0.1,model_epoch_009_step_29380,9,29380,97.7,100.0,100.0,100.0,passed,experiments/reid/uliri/evaluation_results_0.0.1/evaluation_summary.json
+ULIRI,uliri_resnet_0.0.1,ULIRI ResNet 0.0.1,model_epoch_012_step_37754,12,37754,97.2,100.0,100.0,100.0,passed,experiments/reid/uliri/evaluation_results_0.0.1/evaluation_summary.json
+ULIRI,uliri_resnet_0.0.1_current_split_epoch13,ULIRI ResNet 0.0.1 epoch 13 on current split,model_epoch_013_step_38333,13,38333,99.8,100.0,100.0,100.0,passed,experiments/reid/repository_training_results/additional_validation/summary_worker0.tsv
+ULIRI,uliri_resnet_0.0.2,ULIRI ResNet 0.0.2,model_epoch_009_step_25519,9,25519,92.1,99.9,99.9,99.9,passed,experiments/reid/uliri/evaluation_results_0.0.2/evaluation_summary.json
+ULIRI,uliri_resnet_0.1.1_status_only,ULIRI ResNet 0.1.1 status-only,training_status_latest,,,84.52069163322449,99.98132600000001,100.0,100.0,passed,experiments/reid/uliri/results_0.1.1/train/status.json

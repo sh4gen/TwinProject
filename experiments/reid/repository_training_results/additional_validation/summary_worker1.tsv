@@ -1,0 +1,8 @@
+experiment	checkpoint	mAP	Rank-1	Rank-5	Rank-10	status	log
+ltcc_swin_1.0.1	model_epoch_069_step_38346	17.9%	39.4%	52.7%	61.9%	passed	/mnt/2tb_ssd/TwinProject/experiments/reid/repository_training_results/additional_validation/logs/ltcc_swin_1.0.1_model_epoch_069_step_38346.log
+ltcc_swin_1.0.1	model_epoch_089_step_49312	15.0%	33.3%	49.7%	56.0%	passed	/mnt/2tb_ssd/TwinProject/experiments/reid/repository_training_results/additional_validation/logs/ltcc_swin_1.0.1_model_epoch_089_step_49312.log
+ltcc_swin_1.0.1	model_epoch_109_step_60244	17.5%	40.6%	55.6%	62.3%	passed	/mnt/2tb_ssd/TwinProject/experiments/reid/repository_training_results/additional_validation/logs/ltcc_swin_1.0.1_model_epoch_109_step_60244.log
+ltcc_swin_1.0.1	model_epoch_129_step_71182	16.3%	40.0%	51.9%	59.0%	passed	/mnt/2tb_ssd/TwinProject/experiments/reid/repository_training_results/additional_validation/logs/ltcc_swin_1.0.1_model_epoch_129_step_71182.log
+ltcc_swin_1.0.1	model_epoch_149_step_82107	15.8%	38.1%	52.1%	59.4%	passed	/mnt/2tb_ssd/TwinProject/experiments/reid/repository_training_results/additional_validation/logs/ltcc_swin_1.0.1_model_epoch_149_step_82107.log
+duke_swin_plain_local_partial	model_epoch_004_step_02206	10.3%	12.4%	22.4%	27.9%	passed	/mnt/2tb_ssd/TwinProject/experiments/reid/repository_training_results/additional_validation/logs/duke_swin_plain_local_partial_model_epoch_004_step_02206.log
+ltcc_sweep_smoke	model_epoch_001_step_02621	5.8%	12.0%	21.7%	29.8%	passed	/mnt/2tb_ssd/TwinProject/experiments/reid/repository_training_results/additional_validation/logs/ltcc_sweep_smoke_model_epoch_001_step_02621.log

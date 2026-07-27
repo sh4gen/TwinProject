@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReID Synthetic Data Impact Dashboard</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f3f5f7;
+      --surface: #ffffff;
+      --surface-2: #f8fafb;
+      --ink: #16202a;
+      --muted: #687586;
+      --line: #d9e0e6;
+      --blue: #1f5fbf;
+      --green: #14814d;
+      --red: #b4232f;
+      --amber: #a66405;
+      --violet: #6b4bbd;
+      --teal: #007d7a;
+      --shadow: 0 10px 28px rgba(25, 35, 45, 0.07);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 14px/1.45 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+    button, select { font: inherit; }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid var(--line);
+      background: rgba(243, 245, 247, 0.96);
+      backdrop-filter: blur(10px);
+    }
+    .wrap { width: min(1440px, calc(100vw - 32px)); margin: 0 auto; }
+    .topbar {
+      display: grid;
+      grid-template-columns: minmax(260px, 1fr) auto;
+      gap: 20px;
+      align-items: center;
+      min-height: 76px;
+    }
+    h1, h2, h3 { margin: 0; letter-spacing: 0; }
+    h1 { font-size: 23px; font-weight: 780; }
+    h2 { font-size: 18px; font-weight: 760; }
+    h3 { font-size: 14px; font-weight: 760; }
+    .subtitle { margin-top: 3px; color: var(--muted); font-size: 13px; }
+    .tabs { display: flex; gap: 7px; flex-wrap: wrap; justify-content: flex-end; }
+    .tab {
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--surface);
+      color: #344253;
+      padding: 0 12px;
+      cursor: pointer;
+    }
+    .tab[aria-selected="true"] {
+      border-color: var(--blue);
+      background: var(--blue);
+      color: #fff;
+    }
+    main { padding: 22px 0 42px; }
+    .page { display: none; }
+    .page.active { display: block; }
+    .grid { display: grid; gap: 14px; }
+    .hero {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .metric { padding: 15px 16px; min-height: 104px; }
+    .metric .label {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .metric .value { margin-top: 6px; font-size: 28px; font-weight: 800; }
+    .metric .note { margin-top: 3px; color: var(--muted); font-size: 12px; }
+    .good { color: var(--green); }
+    .bad { color: var(--red); }
+    .neutral { color: var(--muted); }
+    .section { margin-top: 14px; }
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 13px 15px;
+      border-bottom: 1px solid var(--line);
+      background: var(--surface);
+    }
+    .section-head small { display: block; margin-top: 2px; color: var(--muted); }
+    .two { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    .three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .table-wrap { overflow: auto; }
+    table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+    th, td {
+      padding: 9px 11px;
+      border-bottom: 1px solid var(--line);
+      text-align: right;
+      white-space: nowrap;
+    }
+    th {
+      background: #eef2f5;
+      color: #4c5a68;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    th:first-child, td:first-child { text-align: left; }
+    tbody tr:hover { background: var(--surface-2); }
+    .rank { color: var(--muted); width: 48px; }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 22px;
+      border-radius: 5px;
+      padding: 0 7px;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .tag.swin { background: #eaf2ff; color: var(--blue); }
+    .tag.resnet { background: #f4eefc; color: var(--violet); }
+    .tag.raw { background: #e8f6f5; color: var(--teal); }
+    .chart { padding: 14px 14px 16px; }
+    .chart canvas { display: block; width: 100%; height: 260px; }
+    .chart.compact canvas { height: 220px; }
+    .strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      padding: 14px;
+    }
+    .mini {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface-2);
+      padding: 12px;
+      min-height: 96px;
+    }
+    .mini .name { color: var(--muted); font-size: 12px; }
+    .mini .number { margin-top: 4px; font-size: 22px; font-weight: 800; }
+    .mini .detail { margin-top: 2px; color: var(--muted); font-size: 12px; }
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      padding: 0 14px 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .swatch {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+      margin-right: 6px;
+      vertical-align: -1px;
+    }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 1050px) {
+      .topbar { grid-template-columns: 1fr; padding: 12px 0; }
+      .tabs { justify-content: flex-start; }
+      .hero, .strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .two, .three { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      .wrap { width: min(100vw - 20px, 1440px); }
+      .hero, .strip { grid-template-columns: 1fr; }
+      th, td { padding: 8px 9px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap topbar">
+      <div>
+        <h1>ReID Synthetic Data Impact</h1>
+        <div class="subtitle">Successful evaluations only. Dataset pages use readable training configurations.</div>
+      </div>
+      <nav class="tabs" aria-label="Dashboard pages">
+        <button class="tab" data-page="overview" aria-selected="true">Overview</button>
+        <button class="tab" data-page="ltcc">LTCC</button>
+        <button class="tab" data-page="duke">Duke</button>
+        <button class="tab" data-page="prcc">PRCC</button>
+        <button class="tab" data-page="generalized">Generalized</button>
+        <button class="tab" data-page="synthetic">Synthetic Only</button>
+        <button class="tab" data-page="legacy">ResNet</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="overview" class="page active"></section>
+    <section id="ltcc" class="page"></section>
+    <section id="duke" class="page"></section>
+    <section id="prcc" class="page"></section>
+    <section id="generalized" class="page"></section>
+    <section id="synthetic" class="page"></section>
+    <section id="legacy" class="page"></section>
+
+    <div class="footer">
+      <span>Data source: repository_training_results/tables/checkpoint_metrics.csv</span>
+      <a href="../repository_training_results/TRAINING_RESULTS_REPORT.md">Markdown report</a>
+    </div>
+  </main>
+
+  <script>
+    const BASE = '../repository_training_results/tables/';
+    const COLORS = ['#1f5fbf', '#14814d', '#b4232f', '#a66405', '#6b4bbd', '#007d7a', '#58616d', '#cc5a1f'];
+
+    const SERIES = {
+      ltcc_swin_plain: { page: 'LTCC', name: 'Real Only', family: 'Swin', protocol: 'target', order: 10 },
+      ltcc_filtered_synthetic_3_variants: { page: 'LTCC', name: 'Real + Filtered Synthetic', family: 'Swin', protocol: 'target', order: 20 },
+      ltcc_swin_unfiltered_synthetic: { page: 'LTCC', name: 'Real + Unfiltered Synthetic', family: 'Swin', protocol: 'target', order: 30 },
+      ltcc_syntetic_10: { page: 'LTCC', name: 'Real + 10% Synthetic', family: 'Swin', protocol: 'target', order: 40 },
+      ltcc_syntetic_25: { page: 'LTCC', name: 'Real + 25% Synthetic', family: 'Swin', protocol: 'target', order: 50 },
+      ltcc_syntetic_50: { page: 'LTCC', name: 'Real + 50% Synthetic', family: 'Swin', protocol: 'target', order: 60 },
+      generalized_reid_ltcc_raw: { page: 'LTCC', name: 'Generalized Mixed', family: 'Swin', protocol: 'raw', order: 70 },
+      syntetic_only_filtered_30k_ltcc_raw: { page: 'LTCC', name: 'Synthetic Only 30k', family: 'Swin', protocol: 'raw', order: 80 },
+      syntetic_only_filtered_100k_ltcc_raw: { page: 'LTCC', name: 'Synthetic Only 100k', family: 'Swin', protocol: 'raw', order: 90 },
+      pretrained_swin_ltcc_raw: { page: 'LTCC', name: 'External Pretrained', family: 'Swin', protocol: 'raw', order: 100 },
+
+      duke_swin_plain_external: { page: 'Duke', name: 'Real Only', family: 'Swin', protocol: 'target', order: 10 },
+      duke_filtered_synthetic_3_variants: { page: 'Duke', name: 'Real + Filtered Synthetic', family: 'Swin', protocol: 'target', order: 20 },
+      duke_swin_unfiltered_synthetic: { page: 'Duke', name: 'Real + Unfiltered Synthetic', family: 'Swin', protocol: 'target', order: 30 },
+      generalized_reid_duke_raw: { page: 'Duke', name: 'Generalized Mixed', family: 'Swin', protocol: 'raw', order: 70 },
+      syntetic_only_filtered_30k_duke_raw: { page: 'Duke', name: 'Synthetic Only 30k', family: 'Swin', protocol: 'raw', order: 80 },
+      syntetic_only_filtered_100k_duke_raw: { page: 'Duke', name: 'Synthetic Only 100k', family: 'Swin', protocol: 'raw', order: 90 },
+      pretrained_swin_duke_raw: { page: 'Duke', name: 'External Pretrained', family: 'Swin', protocol: 'raw', order: 100 },
+
+      prcc_plain_swin: { page: 'PRCC', name: 'Real Only', family: 'Swin', protocol: 'target', order: 10 },
+      prcc_filtered_syntetic_swin: { page: 'PRCC', name: 'Real + Filtered Synthetic', family: 'Swin', protocol: 'target', order: 20 },
+      generalized_reid_prcc_raw: { page: 'PRCC', name: 'Generalized Mixed', family: 'Swin', protocol: 'raw', order: 70 },
+      syntetic_only_filtered_30k_prcc_raw: { page: 'PRCC', name: 'Synthetic Only 30k', family: 'Swin', protocol: 'raw', order: 80 },
+      syntetic_only_filtered_100k_prcc_raw: { page: 'PRCC', name: 'Synthetic Only 100k', family: 'Swin', protocol: 'raw', order: 90 },
+      pretrained_swin_prcc_raw: { page: 'PRCC', name: 'External Pretrained', family: 'Swin', protocol: 'raw', order: 100 },
+
+      generalized_reid_combined_stress_raw: { page: 'Combined', name: 'Combined Stress Split', family: 'Swin', protocol: 'raw', order: 110 },
+      pretrained_swin_uliri_raw: { page: 'ULIRI', name: 'External Pretrained', family: 'Swin', protocol: 'raw', order: 120 },
+      pretrained_swin_synthetic_market1501_raw: { page: 'Synthetic', name: 'External Pretrained', family: 'Swin', protocol: 'raw', order: 130 },
+
+      'ltcc_resnet_0.1.3': { page: 'LTCC', name: 'LTCC ResNet Baseline A', family: 'ResNet', protocol: 'target', order: 10 },
+      'ltcc_resnet_0.1.4': { page: 'LTCC', name: 'LTCC ResNet Baseline B', family: 'ResNet', protocol: 'target', order: 20 },
+      ltcc_resnet_synthetic_transfer: { page: 'LTCC', name: 'LTCC ResNet Synthetic Transfer', family: 'ResNet', protocol: 'target', order: 30 },
+      'prcc_resnet_0.0.1': { page: 'PRCC', name: 'PRCC ResNet Baseline', family: 'ResNet', protocol: 'target', order: 40 },
+      'uliri_resnet_0.0.1': { page: 'ULIRI', name: 'ULIRI ResNet Baseline', family: 'ResNet', protocol: 'target', order: 50 },
+      'uliri_resnet_0.0.2': { page: 'ULIRI', name: 'ULIRI ResNet Follow-up', family: 'ResNet', protocol: 'target', order: 60 }
+    };
+
+    const DATASETS = {
+      LTCC: {
+        id: 'ltcc',
+        real: 'ltcc_swin_plain',
+        filtered: 'ltcc_filtered_synthetic_3_variants',
+        unfiltered: 'ltcc_swin_unfiltered_synthetic',
+        lines: ['ltcc_swin_plain', 'ltcc_filtered_synthetic_3_variants', 'ltcc_swin_unfiltered_synthetic', 'ltcc_syntetic_10', 'ltcc_syntetic_25', 'ltcc_syntetic_50'],
+        comparisons: ['ltcc_swin_plain', 'ltcc_filtered_synthetic_3_variants', 'ltcc_swin_unfiltered_synthetic', 'ltcc_syntetic_10', 'ltcc_syntetic_25', 'ltcc_syntetic_50', 'generalized_reid_ltcc_raw', 'syntetic_only_filtered_30k_ltcc_raw', 'syntetic_only_filtered_100k_ltcc_raw', 'pretrained_swin_ltcc_raw']
+      },
+      Duke: {
+        id: 'duke',
+        real: 'duke_swin_plain_external',
+        filtered: 'duke_filtered_synthetic_3_variants',
+        unfiltered: 'duke_swin_unfiltered_synthetic',
+        lines: ['duke_filtered_synthetic_3_variants', 'duke_swin_unfiltered_synthetic'],
+        comparisons: ['duke_swin_plain_external', 'duke_filtered_synthetic_3_variants', 'duke_swin_unfiltered_synthetic', 'generalized_reid_duke_raw', 'syntetic_only_filtered_30k_duke_raw', 'syntetic_only_filtered_100k_duke_raw', 'pretrained_swin_duke_raw']
+      },
+      PRCC: {
+        id: 'prcc',
+        real: 'prcc_plain_swin',
+        filtered: 'prcc_filtered_syntetic_swin',
+        lines: ['prcc_plain_swin', 'prcc_filtered_syntetic_swin'],
+        comparisons: ['prcc_plain_swin', 'prcc_filtered_syntetic_swin', 'generalized_reid_prcc_raw', 'syntetic_only_filtered_30k_prcc_raw', 'syntetic_only_filtered_100k_prcc_raw', 'pretrained_swin_prcc_raw']
+      }
+    };
+
+    let rows = [];
+
+    function esc(value) {
+      return String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
+    }
+
+    function parseCsv(text) {
+      const output = [];
+      let row = [], cell = '', quoted = false;
+      for (let i = 0; i < text.length; i++) {
+        const c = text[i], n = text[i + 1];
+        if (c === '"' && quoted && n === '"') { cell += '"'; i++; }
+        else if (c === '"') quoted = !quoted;
+        else if (c === ',' && !quoted) { row.push(cell); cell = ''; }
+        else if ((c === '\n' || c === '\r') && !quoted) {
+          if (c === '\r' && n === '\n') i++;
+          row.push(cell); cell = '';
+          if (row.some(v => v !== '')) output.push(row);
+          row = [];
+        } else cell += c;
+      }
+      if (cell || row.length) { row.push(cell); output.push(row); }
+      const headers = output.shift() || [];
+      return output.map(values => Object.fromEntries(headers.map((h, i) => [h, values[i] ?? ''])));
+    }
+
+    async function load() {
+      const response = await fetch(BASE + 'checkpoint_metrics.csv');
+      if (!response.ok) throw new Error(`checkpoint_metrics.csv HTTP ${response.status}`);
+      rows = parseCsv(await response.text())
+        .filter(row => row.status === 'passed' && SERIES[row.series] && Number.isFinite(num(row.mAP)))
+        .map(row => ({
+          ...row,
+          ...SERIES[row.series],
+          map: num(row.mAP),
+          rank1: num(row['Rank-1']),
+          rank5: num(row['Rank-5']),
+          rank10: num(row['Rank-10']),
+          epochNum: num(row.epoch),
+          stepNum: num(row.step)
+        }));
+      render();
+    }
+
+    function num(value) {
+      if (value === undefined || value === null || value === '' || value === 'NA') return NaN;
+      return Number(String(value).replace('%', ''));
+    }
+
+    function pct(value) {
+      return Number.isFinite(value) ? `${value.toFixed(1)}%` : 'NA';
+    }
+
+    function signed(value) {
+      if (!Number.isFinite(value)) return 'NA';
+      const sign = value > 0 ? '+' : '';
+      return `${sign}${value.toFixed(1)}`;
+    }
+
+    function deltaClass(value) {
+      if (!Number.isFinite(value) || Math.abs(value) < 0.4) return 'neutral';
+      return value > 0 ? 'good' : 'bad';
+    }
+
+    function seriesRows(series) {
+      return rows.filter(row => row.series === series).sort((a, b) => a.epochNum - b.epochNum || a.stepNum - b.stepNum);
+    }
+
+    function best(series) {
+      return seriesRows(series).reduce((acc, row) => !acc || row.map > acc.map ? row : acc, null);
+    }
+
+    function finalRow(series) {
+      const values = seriesRows(series);
+      return values[values.length - 1] || null;
+    }
+
+    function table(headers, data) {
+      return `<div class="table-wrap"><table><thead><tr>${headers.map(h => `<th>${esc(h[0])}</th>`).join('')}</tr></thead><tbody>${
+        data.map(row => `<tr>${headers.map(h => `<td>${h[2] ? h[2](row[h[1]], row) : esc(row[h[1]])}</td>`).join('')}</tr>`).join('')
+      }</tbody></table></div>`;
+    }
+
+    function familyTag(row) {
+      const protocol = row.protocol === 'raw' ? ' <span class="tag raw">Raw</span>' : '';
+      return `<span class="tag ${row.family.toLowerCase()}">${esc(row.family)}</span>${protocol}`;
+    }
+
+    function checkpointLabel(row) {
+      if (!row) return 'NA';
+      return Number.isFinite(row.epochNum) ? `Epoch ${row.epoch}` : esc(row.checkpoint);
+    }
+
+    function datasetComparisonRows(dataset) {
+      const baseline = best(dataset.real);
+      return dataset.comparisons
+        .map(series => {
+          const row = best(series);
+          if (!row) return null;
+          return {
+            config: row.name,
+            family: row.family,
+            protocol: row.protocol,
+            bestMap: row.map,
+            rank1: row.rank1,
+            delta: baseline ? row.map - baseline.map : NaN,
+            checkpoint: checkpointLabel(row),
+            row
+          };
+        })
+        .filter(Boolean)
+        .sort((a, b) => b.bestMap - a.bestMap);
+    }
+
+    function renderMetricCards(datasetName, dataset) {
+      const real = best(dataset.real);
+      const filtered = best(dataset.filtered);
+      const unfiltered = dataset.unfiltered ? best(dataset.unfiltered) : null;
+      const syn30 = best(`syntetic_only_filtered_30k_${datasetName.toLowerCase()}_raw`);
+      const syn100 = best(`syntetic_only_filtered_100k_${datasetName.toLowerCase()}_raw`);
+      const filteredDelta = filtered && real ? filtered.map - real.map : NaN;
+      const filterQuality = filtered && unfiltered ? filtered.map - unfiltered.map : NaN;
+      const synGap = syn30 && syn100 ? syn100.map - syn30.map : NaN;
+      const cards = [
+        ['Best Swin', pct(Math.max(real?.map ?? -1, filtered?.map ?? -1, unfiltered?.map ?? -1)), 'Target-specific protocol'],
+        ['Synthetic Effect', signed(filteredDelta), 'Filtered mix vs real only', deltaClass(filteredDelta)],
+        ['Filtering Effect', signed(filterQuality), 'Filtered vs unfiltered mix', deltaClass(filterQuality)],
+        ['100k vs 30k Synthetic Only', signed(synGap), 'Raw transfer mAP', deltaClass(synGap)]
+      ];
+      return `<div class="hero">${cards.map(([label, value, note, klass]) => `
+        <article class="panel metric">
+          <div class="label">${esc(label)}</div>
+          <div class="value ${klass || ''}">${esc(value)}</div>
+          <div class="note">${esc(note)}</div>
+        </article>`).join('')}</div>`;
+    }
+
+    function renderDataset(name) {
+      const dataset = DATASETS[name];
+      const comparison = datasetComparisonRows(dataset);
+      const rankTable = table([
+        ['Rank', 'rank', value => `<span class="rank">${esc(value)}</span>`],
+        ['Training Configuration', 'config'],
+        ['Type', 'row', (_, item) => familyTag(item.row)],
+        ['Best mAP', 'bestMap', pct],
+        ['Rank-1', 'rank1', pct],
+        ['Delta', 'delta', value => `<span class="${deltaClass(value)}">${signed(value)}</span>`],
+        ['Best Checkpoint', 'checkpoint']
+      ], comparison.map((row, index) => ({ ...row, rank: index + 1 })));
+
+      const checkpoints = dataset.lines.flatMap(series => seriesRows(series).map(row => ({
+        config: row.name,
+        epoch: row.epoch,
+        map: row.map,
+        rank1: row.rank1
+      }))).sort((a, b) => a.config.localeCompare(b.config) || num(a.epoch) - num(b.epoch));
+      const checkpointTable = table([
+        ['Training Configuration', 'config'],
+        ['Epoch', 'epoch'],
+        ['mAP', 'map', pct],
+        ['Rank-1', 'rank1', pct]
+      ], checkpoints);
+
+      document.getElementById(dataset.id).innerHTML = `
+        ${renderMetricCards(name, dataset)}
+        <section class="panel section">
+          <div class="section-head"><div><h2>${esc(name)} Synthetic Impact</h2><small>Best checkpoint per successful experiment</small></div></div>
+          ${rankTable}
+        </section>
+        <section class="grid two section">
+          <article class="panel chart">
+            <div class="section-head"><div><h2>mAP Curve</h2><small>Swin target-specific training</small></div></div>
+            <canvas id="${dataset.id}Map"></canvas>
+            <div class="legend" id="${dataset.id}MapLegend"></div>
+          </article>
+          <article class="panel chart">
+            <div class="section-head"><div><h2>Rank-1 Curve</h2><small>Swin target-specific training</small></div></div>
+            <canvas id="${dataset.id}Rank"></canvas>
+            <div class="legend" id="${dataset.id}RankLegend"></div>
+          </article>
+        </section>
+        <section class="panel section">
+          <div class="section-head"><div><h2>Checkpoint Rows</h2><small>Only the plotted successful Swin runs</small></div></div>
+          ${checkpointTable}
+        </section>`;
+    }
+
+    function renderOverview() {
+      const ltccReal = best(DATASETS.LTCC.real), ltccFiltered = best(DATASETS.LTCC.filtered);
+      const dukeReal = best(DATASETS.Duke.real), dukeFiltered = best(DATASETS.Duke.filtered);
+      const prccReal = best(DATASETS.PRCC.real), prccFiltered = best(DATASETS.PRCC.filtered);
+      const generalized = ['generalized_reid_duke_raw', 'generalized_reid_ltcc_raw', 'generalized_reid_prcc_raw'].map(best);
+      const macro = generalized.reduce((sum, row) => sum + (row?.map || 0), 0) / generalized.length;
+      const cards = [
+        ['LTCC Synthetic Gain', signed(ltccFiltered.map - ltccReal.map), `${pct(ltccReal.map)} to ${pct(ltccFiltered.map)}`, deltaClass(ltccFiltered.map - ltccReal.map)],
+        ['Duke Synthetic Gap', signed(dukeFiltered.map - dukeReal.map), `${pct(dukeReal.map)} to ${pct(dukeFiltered.map)}`, deltaClass(dukeFiltered.map - dukeReal.map)],
+        ['PRCC Synthetic Gain', signed(prccFiltered.map - prccReal.map), `${pct(prccReal.map)} to ${pct(prccFiltered.map)}`, deltaClass(prccFiltered.map - prccReal.map)],
+        ['Generalized Macro mAP', pct(macro), 'Duke + LTCC + PRCC raw']
+      ];
+      const impactRows = [
+        { dataset: 'LTCC', real: ltccReal.map, filtered: ltccFiltered.map, delta: ltccFiltered.map - ltccReal.map, winner: 'Real + Filtered Synthetic' },
+        { dataset: 'Duke', real: dukeReal.map, filtered: dukeFiltered.map, delta: dukeFiltered.map - dukeReal.map, winner: 'Real Only' },
+        { dataset: 'PRCC', real: prccReal.map, filtered: prccFiltered.map, delta: prccFiltered.map - prccReal.map, winner: 'Real + Filtered Synthetic' }
+      ];
+      document.getElementById('overview').innerHTML = `
+        <div class="hero">${cards.map(([label, value, note, klass]) => `
+          <article class="panel metric"><div class="label">${esc(label)}</div><div class="value ${klass || ''}">${esc(value)}</div><div class="note">${esc(note)}</div></article>`).join('')}</div>
+        <section class="grid two">
+          <article class="panel chart">
+            <div class="section-head"><div><h2>Synthetic Impact By Dataset</h2><small>Real-only Swin vs filtered synthetic mix</small></div></div>
+            <canvas id="impactBars"></canvas>
+          </article>
+          <article class="panel section" style="margin-top:0">
+            <div class="section-head"><div><h2>Controlled Summary</h2><small>Swin target-specific protocol</small></div></div>
+            ${table([
+              ['Dataset', 'dataset'],
+              ['Real Only', 'real', pct],
+              ['Filtered Mix', 'filtered', pct],
+              ['Delta', 'delta', value => `<span class="${deltaClass(value)}">${signed(value)}</span>`],
+              ['Winner', 'winner']
+            ], impactRows)}
+          </article>
+        </section>
+        <section class="panel section">
+          <div class="section-head"><div><h2>Backbone Separation</h2><small>Swin and ResNet are not mixed in model ranking</small></div></div>
+          <div class="strip">
+            <div class="mini"><div class="name">Best LTCC Swin</div><div class="number">${pct(ltccFiltered.map)}</div><div class="detail">Real + filtered synthetic</div></div>
+            <div class="mini"><div class="name">Best LTCC ResNet</div><div class="number">${pct(best('ltcc_resnet_0.1.4').map)}</div><div class="detail">Legacy baseline</div></div>
+            <div class="mini"><div class="name">Best PRCC Swin</div><div class="number">${pct(prccFiltered.map)}</div><div class="detail">Real + filtered synthetic</div></div>
+            <div class="mini"><div class="name">Best PRCC ResNet</div><div class="number">${pct(best('prcc_resnet_0.0.1').map)}</div><div class="detail">Legacy baseline</div></div>
+          </div>
+        </section>`;
+    }
+
+    function renderGeneralized() {
+      const series = ['generalized_reid_duke_raw', 'generalized_reid_ltcc_raw', 'generalized_reid_prcc_raw', 'generalized_reid_combined_stress_raw'];
+      const finals = series.map(s => ({ row: best(s), final: finalRow(s) })).filter(x => x.row);
+      document.getElementById('generalized').innerHTML = `
+        <div class="hero">${finals.map(item => `
+          <article class="panel metric"><div class="label">${esc(item.row.name)}</div><div class="value">${pct(item.row.map)}</div><div class="note">best raw mAP, ${checkpointLabel(item.row)}</div></article>`).join('')}</div>
+        <section class="grid two section">
+          <article class="panel chart"><div class="section-head"><div><h2>Generalized mAP</h2><small>One mixed-domain Swin model tested per target</small></div></div><canvas id="generalizedMap"></canvas><div class="legend" id="generalizedMapLegend"></div></article>
+          <article class="panel chart"><div class="section-head"><div><h2>Generalized Rank-1</h2><small>Raw retrieval protocol</small></div></div><canvas id="generalizedRank"></canvas><div class="legend" id="generalizedRankLegend"></div></article>
+        </section>
+        <section class="panel section">
+          <div class="section-head"><div><h2>Best Generalized Results</h2><small>Raw evaluation</small></div></div>
+          ${table([
+            ['Target', 'target'],
+            ['Best mAP', 'map', pct],
+            ['Rank-1', 'rank1', pct],
+            ['Best Checkpoint', 'checkpoint', (_, row) => checkpointLabel(row)]
+          ], finals.map(item => item.row))}
+        </section>`;
+    }
+
+    function renderSyntheticOnly() {
+      const series = [
+        'syntetic_only_filtered_30k_duke_raw', 'syntetic_only_filtered_100k_duke_raw',
+        'syntetic_only_filtered_30k_ltcc_raw', 'syntetic_only_filtered_100k_ltcc_raw',
+        'syntetic_only_filtered_30k_prcc_raw', 'syntetic_only_filtered_100k_prcc_raw'
+      ];
+      const bestRows = series.map(best).filter(Boolean).sort((a, b) => a.target.localeCompare(b.target) || a.name.localeCompare(b.name));
+      const paired = ['Duke', 'LTCC', 'PRCC'].map(target => {
+        const s30 = best(`syntetic_only_filtered_30k_${target.toLowerCase()}_raw`);
+        const s100 = best(`syntetic_only_filtered_100k_${target.toLowerCase()}_raw`);
+        return { target, m30: s30?.map, m100: s100?.map, delta: s100 && s30 ? s100.map - s30.map : NaN };
+      });
+      document.getElementById('synthetic').innerHTML = `
+        <section class="grid two">
+          <article class="panel chart"><div class="section-head"><div><h2>Synthetic Only mAP</h2><small>30k filtered vs 100k lower-filtered</small></div></div><canvas id="syntheticMap"></canvas><div class="legend" id="syntheticMapLegend"></div></article>
+          <article class="panel section" style="margin-top:0"><div class="section-head"><div><h2>30k vs 100k</h2><small>Best raw transfer mAP</small></div></div>
+            ${table([
+              ['Dataset', 'target'],
+              ['30k', 'm30', pct],
+              ['100k', 'm100', pct],
+              ['Delta', 'delta', value => `<span class="${deltaClass(value)}">${signed(value)}</span>`]
+            ], paired)}
+          </article>
+        </section>
+        <section class="panel section">
+          <div class="section-head"><div><h2>Best Synthetic-Only Checkpoints</h2><small>No real training images</small></div></div>
+          ${table([
+            ['Dataset', 'target'],
+            ['Training Configuration', 'name'],
+            ['Best mAP', 'map', pct],
+            ['Rank-1', 'rank1', pct],
+            ['Best Checkpoint', 'checkpoint', (_, row) => checkpointLabel(row)]
+          ], bestRows)}
+        </section>`;
+    }
+
+    function renderLegacy() {
+      const series = Object.keys(SERIES).filter(s => SERIES[s].family === 'ResNet');
+      const bestRows = series.map(best).filter(Boolean).sort((a, b) => a.target.localeCompare(b.target) || b.map - a.map);
+      document.getElementById('legacy').innerHTML = `
+        <div class="hero">
+          <article class="panel metric"><div class="label">LTCC Best ResNet</div><div class="value">${pct(best('ltcc_resnet_0.1.4').map)}</div><div class="note">legacy target-specific</div></article>
+          <article class="panel metric"><div class="label">LTCC Best Swin</div><div class="value">${pct(best('ltcc_filtered_synthetic_3_variants').map)}</div><div class="note">real + filtered synthetic</div></article>
+          <article class="panel metric"><div class="label">PRCC ResNet</div><div class="value">${pct(best('prcc_resnet_0.0.1').map)}</div><div class="note">legacy target-specific</div></article>
+          <article class="panel metric"><div class="label">PRCC Best Swin</div><div class="value">${pct(best('prcc_filtered_syntetic_swin').map)}</div><div class="note">real + filtered synthetic</div></article>
+        </div>
+        <section class="grid two section">
+          <article class="panel chart"><div class="section-head"><div><h2>ResNet mAP</h2><small>Separated from Swin rankings</small></div></div><canvas id="resnetMap"></canvas><div class="legend" id="resnetMapLegend"></div></article>
+          <article class="panel section" style="margin-top:0"><div class="section-head"><div><h2>Legacy Best Rows</h2><small>Successful ResNet evaluations only</small></div></div>
+            ${table([
+              ['Dataset', 'target'],
+              ['Training Configuration', 'name'],
+              ['Best mAP', 'map', pct],
+              ['Rank-1', 'rank1', pct],
+              ['Best Checkpoint', 'checkpoint', (_, row) => checkpointLabel(row)]
+            ], bestRows)}
+          </article>
+        </section>`;
+    }
+
+    function render() {
+      renderOverview();
+      renderDataset('LTCC');
+      renderDataset('Duke');
+      renderDataset('PRCC');
+      renderGeneralized();
+      renderSyntheticOnly();
+      renderLegacy();
+      activateTabs();
+      activatePage(location.hash.replace('#', '') || 'overview', false);
+    }
+
+    function activateTabs() {
+      document.querySelectorAll('.tab').forEach(button => {
+        button.addEventListener('click', () => {
+          activatePage(button.dataset.page, true);
+        });
+      });
+    }
+
+    function activatePage(page, updateHash) {
+      const target = document.getElementById(page) ? page : 'overview';
+      document.querySelectorAll('.tab').forEach(tab => tab.setAttribute('aria-selected', String(tab.dataset.page === target)));
+      document.querySelectorAll('.page').forEach(section => section.classList.toggle('active', section.id === target));
+      if (updateHash) history.replaceState(null, '', `#${target}`);
+      redrawPage(target);
+    }
+
+    function redrawPage(page) {
+      if (page === 'overview') {
+        drawImpactBars('impactBars', [
+          { dataset: 'LTCC', real: best(DATASETS.LTCC.real).map, filtered: best(DATASETS.LTCC.filtered).map },
+          { dataset: 'Duke', real: best(DATASETS.Duke.real).map, filtered: best(DATASETS.Duke.filtered).map },
+          { dataset: 'PRCC', real: best(DATASETS.PRCC.real).map, filtered: best(DATASETS.PRCC.filtered).map }
+        ]);
+      } else if (page === 'ltcc') {
+        drawLineChart('ltccMap', 'ltccMapLegend', DATASETS.LTCC.lines, 'map');
+        drawLineChart('ltccRank', 'ltccRankLegend', DATASETS.LTCC.lines, 'rank1');
+      } else if (page === 'duke') {
+        drawLineChart('dukeMap', 'dukeMapLegend', DATASETS.Duke.lines, 'map');
+        drawLineChart('dukeRank', 'dukeRankLegend', DATASETS.Duke.lines, 'rank1');
+      } else if (page === 'prcc') {
+        drawLineChart('prccMap', 'prccMapLegend', DATASETS.PRCC.lines, 'map');
+        drawLineChart('prccRank', 'prccRankLegend', DATASETS.PRCC.lines, 'rank1');
+      } else if (page === 'generalized') {
+        const series = ['generalized_reid_duke_raw', 'generalized_reid_ltcc_raw', 'generalized_reid_prcc_raw', 'generalized_reid_combined_stress_raw'];
+        drawLineChart('generalizedMap', 'generalizedMapLegend', series, 'map');
+        drawLineChart('generalizedRank', 'generalizedRankLegend', series, 'rank1');
+      } else if (page === 'synthetic') {
+        drawLineChart('syntheticMap', 'syntheticMapLegend', [
+          'syntetic_only_filtered_30k_duke_raw', 'syntetic_only_filtered_100k_duke_raw',
+          'syntetic_only_filtered_30k_ltcc_raw', 'syntetic_only_filtered_100k_ltcc_raw',
+          'syntetic_only_filtered_30k_prcc_raw', 'syntetic_only_filtered_100k_prcc_raw'
+        ], 'map');
+      } else if (page === 'legacy') {
+        drawLineChart('resnetMap', 'resnetMapLegend', Object.keys(SERIES).filter(s => SERIES[s].family === 'ResNet'), 'map');
+      }
+    }
+
+    function drawLineChart(canvasId, legendId, seriesList, metric) {
+      const canvas = document.getElementById(canvasId);
+      if (!canvas) return;
+      const dpr = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = Math.max(1, Math.round(rect.width * dpr));
+      canvas.height = Math.max(1, Math.round(rect.height * dpr));
+      const ctx = canvas.getContext('2d');
+      ctx.scale(dpr, dpr);
+      const width = rect.width, height = rect.height;
+      const pad = { left: 44, right: 16, top: 16, bottom: 34 };
+      const labelCounts = seriesList.reduce((counts, series) => {
+        const label = SERIES[series].name;
+        counts[label] = (counts[label] || 0) + 1;
+        return counts;
+      }, {});
+      const datasets = seriesList.map((series, i) => {
+        const meta = SERIES[series];
+        const label = labelCounts[meta.name] > 1 ? `${meta.page} - ${meta.name}` : meta.name;
+        return {
+          series,
+          label,
+          color: COLORS[i % COLORS.length],
+          points: seriesRows(series).filter(row => Number.isFinite(row[metric]) && Number.isFinite(row.epochNum))
+        };
+      }).filter(item => item.points.length);
+      const all = datasets.flatMap(item => item.points);
+      if (!all.length) return;
+      const minX = Math.min(...all.map(p => p.epochNum));
+      const maxX = Math.max(...all.map(p => p.epochNum));
+      const maxY = Math.max(10, Math.ceil(Math.max(...all.map(p => p[metric])) / 10) * 10);
+      ctx.clearRect(0, 0, width, height);
+      drawAxes(ctx, width, height, pad, maxY);
+      const x = value => pad.left + ((value - minX) / Math.max(1, maxX - minX)) * (width - pad.left - pad.right);
+      const y = value => pad.top + (1 - value / maxY) * (height - pad.top - pad.bottom);
+      datasets.forEach(item => {
+        ctx.strokeStyle = item.color;
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        item.points.forEach((point, i) => {
+          const px = x(point.epochNum), py = y(point[metric]);
+          if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+        });
+        ctx.stroke();
+        item.points.forEach(point => {
+          ctx.fillStyle = item.color;
+          ctx.beginPath();
+          ctx.arc(x(point.epochNum), y(point[metric]), 3, 0, Math.PI * 2);
+          ctx.fill();
+        });
+      });
+      ctx.fillStyle = '#687586';
+      ctx.font = '11px Inter, sans-serif';
+      ctx.fillText('Epoch', width - 50, height - 10);
+      ctx.save();
+      ctx.translate(13, 22);
+      ctx.rotate(-Math.PI / 2);
+      ctx.fillText(metric === 'map' ? 'mAP' : 'Rank-1', 0, 0);
+      ctx.restore();
+      const legend = document.getElementById(legendId);
+      if (legend) legend.innerHTML = datasets.map(item => `<span><i class="swatch" style="background:${item.color}"></i>${esc(item.label)}</span>`).join('');
+    }
+
+    function drawAxes(ctx, width, height, pad, maxY) {
+      ctx.strokeStyle = '#d9e0e6';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = '#687586';
+      ctx.font = '11px Inter, sans-serif';
+      for (let i = 0; i <= 4; i++) {
+        const value = (maxY / 4) * i;
+        const y = pad.top + (1 - value / maxY) * (height - pad.top - pad.bottom);
+        ctx.beginPath();
+        ctx.moveTo(pad.left, y);
+        ctx.lineTo(width - pad.right, y);
+        ctx.stroke();
+        ctx.fillText(`${Math.round(value)}%`, 6, y + 4);
+      }
+      ctx.strokeStyle = '#8792a0';
+      ctx.beginPath();
+      ctx.moveTo(pad.left, pad.top);
+      ctx.lineTo(pad.left, height - pad.bottom);
+      ctx.lineTo(width - pad.right, height - pad.bottom);
+      ctx.stroke();
+    }
+
+    function drawImpactBars(canvasId, impactRows) {
+      const canvas = document.getElementById(canvasId);
+      const dpr = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = Math.round(rect.width * dpr);
+      canvas.height = Math.round(rect.height * dpr);
+      const ctx = canvas.getContext('2d');
+      ctx.scale(dpr, dpr);
+      const width = rect.width, height = rect.height;
+      const pad = { left: 48, right: 18, top: 18, bottom: 42 };
+      const maxY = Math.ceil(Math.max(...impactRows.flatMap(row => [row.real, row.filtered])) / 10) * 10;
+      ctx.clearRect(0, 0, width, height);
+      drawAxes(ctx, width, height, pad, maxY);
+      const plotW = width - pad.left - pad.right;
+      const groupW = plotW / impactRows.length;
+      const barW = Math.min(44, groupW / 4);
+      const y = value => pad.top + (1 - value / maxY) * (height - pad.top - pad.bottom);
+      impactRows.forEach((row, i) => {
+        const start = pad.left + i * groupW + groupW / 2;
+        const realX = start - barW - 3;
+        const filtX = start + 3;
+        const realY = y(row.real), filtY = y(row.filtered);
+        ctx.fillStyle = '#58616d';
+        ctx.fillRect(realX, realY, barW, height - pad.bottom - realY);
+        ctx.fillStyle = '#14814d';
+        ctx.fillRect(filtX, filtY, barW, height - pad.bottom - filtY);
+        ctx.fillStyle = '#16202a';
+        ctx.font = '12px Inter, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText(row.dataset, start, height - 15);
+      });
+      ctx.textAlign = 'left';
+      ctx.fillStyle = '#58616d';
+      ctx.fillRect(width - 172, 14, 10, 10);
+      ctx.fillStyle = '#687586';
+      ctx.fillText('Real only', width - 156, 24);
+      ctx.fillStyle = '#14814d';
+      ctx.fillRect(width - 88, 14, 10, 10);
+      ctx.fillStyle = '#687586';
+      ctx.fillText('Filtered', width - 72, 24);
+    }
+
+    document.querySelectorAll('.tab').forEach(button => button.addEventListener('click', () => {}));
+    load().catch(error => {
+      document.getElementById('overview').innerHTML = `<section class="panel metric"><div class="label">Load error</div><div class="value bad">Failed</div><div class="note">${esc(error.message)}</div></section>`;
+    });
+    window.addEventListener('resize', () => {
+      if (!rows.length) return;
+      const active = document.querySelector('.page.active');
+      if (active) redrawPage(active.id);
+    });
+  </script>
+</body>
+</html>

@@ -74,6 +74,45 @@ experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/expe
 experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/status.json
 experiments/reid/duke_syntetic_filtered_seq/evaluate/duke_filtered_syntetic/summary_reverse_gpu*.tsv
 
+# Generated repository-wide ReID report runtime artifacts
+experiments/reid/**/sanitized_*.pth
+experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/logs/
+experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/lightning_logs/
+experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/experiment.yaml
+experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/status.json
+experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/*_cmc_curve.png
+experiments/reid/ltcc_syntetic_filtered_seq/evaluate/ltcc_filtered_syntetic/*_sampled_matches.png
+experiments/reid/repository_training_results/additional_controller.log
+experiments/reid/repository_training_results/additional_validation/logs/
+experiments/reid/repository_training_results/additional_validation/*/
+
+# ReID generated datasets, checkpoints, and runtime outputs
+final_syntetic_dataset/
+datasets/final_syntetic_market1501/manifest.csv
+datasets/final_syntetic_market1501/bounding_box_train/
+datasets/final_syntetic_market1501/bounding_box_test/
+datasets/final_syntetic_market1501/query/
+datasets/final_syntetic_market1501_first_pass/
+experiments/reid/syntetic/
+experiments/reid/**/data/
+experiments/reid/**/data_*/
+experiments/reid/**/results*/
+experiments/reid/**/evaluate*/
+experiments/reid/**/evaluation*/
+experiments/reid/**/export/
+experiments/reid/**/filtered_syntetic_manifest.csv
+experiments/reid/**/manifests/selected_synthetic.csv
+experiments/reid/**/*.log
+experiments/reid/**/*.pid
+experiments/reid/**/lightning_logs/
+experiments/reid/dashboard_server.log
+experiments/reid/dashboard_server.pid
+experiments/reid/ltcc/archives/
+
+# Superseded blog visual drafts; final assets live in blog_visuals_editorial
+experiments/reid/blog_visuals/
+experiments/reid/blog_visuals_no_dashboard/
+
 # Jupyter
 .ipynb_checkpoints/
 *.ipynb_checkpoints
